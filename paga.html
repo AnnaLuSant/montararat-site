@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,11 @@
                 <input type="checkbox" id="check"> <!--um bglh lá no JS-->
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <a href="#Início">Início</a>
-                    <a href="#Sobre">Sobre</a>
-                    <a href="#Cardápio">Cardápio</a>
-                    <a href="#Contato">Contato</a>
+                    <a href="index.html">Início</a>
+                    <a href="sobrenos.html">Sobre</a>
+                    <a href="carrinho.html">Carrinho</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="avaliacoes.html">Avaliações</a>
                 </ul>
             </nav>
 
@@ -29,7 +30,6 @@
     <main>
       <h1>Finalizar Pagamento</h1>
       <br><h3><em>Você pagará:</em></h3>
-
     <table border="1">
         <tr>
          <td><em>Item</em></td>
@@ -37,18 +37,18 @@
         </tr>
         <tr>
          <td>x1 Combo Costela</td>
-         <td>R$ 40,90</td>
+         <td>R$ 45,00</td>
         </tr>
         <tr>
          <td>x1 Porção Coxinha (6 Unidades)</td>
-         <td>R$ 18,90</td>
+         <td>R$ 29,00</td>
         </tr>
         <tr>
          <td>x1 Milkshake Nutella</td>
-         <td>R$ 19,90</td><br>
+         <td>R$ 20,00</td><br>
         <tr>
         <td><em>Total</em></td>
-        <td>R$ 79,70</td>
+        <td>R$ 94,00</td>
         </tr>
     </table>
  <div> 
@@ -57,35 +57,21 @@
             <fieldset>
                 <legend><em>Dados para o pagamento</em></legend><br>
                 <label for="nome">Nome completo</label>
-                <input 
-                 type="text"
-                 id="nome"
-                 nome = "nome"
-                 placeholder="Digite seu nome">
-                <br><br><label for="cpf">CPF na Nota (Opcional)</label>
-                <input 
-                 type="number"
-                 id = "Pagamento"
-                 name="Pagamento"
-                 pattern="[0-9]{6}"
-                 placeholder="Somente Números"
-                 required>
-                <br><br><select id="curso" nome="curso">
-                    <option value="Pix">Pix</option>
-                    <option value="Cartão D">Cartão de Débito</option>
-                    <option value="Cartão C">Cartão de Crédito</option>
-                </select>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required><br><br>
+                <label for="cartao">Número do cartão</label>
+                <input type="text" id="cartao" name="cartao" required><br><br>
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" name="validade" required><br><br>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required><br><br>
+                <label for="pix">PIX</label>
+                <input type="radio" id="pix" name="metodo_pagamento" value="pix" required>
             </fieldset>
+        </form>
      </article>
- </div>
+     <a href="compro.html"><button>Finalizar Pagamento</button></a>
 
-    <a href="comprovante.html">
-     <br> <button>Finalizar pagamento</button>
-    </a>
-
-</main>
-<footer>
-    <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
-</footer>
 </body>
 </html>
