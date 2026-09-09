@@ -68,10 +68,17 @@
                 <input type="text" id="cvv" name="cvv" required><br><br>
                 <label for="pix">PIX</label>
                 <input type="radio" id="pix" name="metodo_pagamento" value="pix" required>
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold;">PIX (Clique para gerar a chave)</summary>
+                        <div style="margin-top: 10px; padding: 10px; border: 1px dashed #ccc; background-color: #f9f9f9;">
+                            <p><strong>Copia e Cola:</strong></p>
+                            <code id="pix-code">00020126360014BR.GOV.BCB.PIX0114+5511999999999520400005303986540510.005802BR5913Nome Recebedor6008SPO62070503***6304E2CA</code>
+                        </div>
+                </details>
             </fieldset>
         </form>
      </article>
-     <a href="compro.html"><button>Finalizar Pagamento</button></a>
+     <a href="compro.html"><button type="button">Finalizar Pagamento</button></a>
 
 </body>
 </html>
