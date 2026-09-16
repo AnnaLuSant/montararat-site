@@ -1,7 +1,7 @@
 *INTEGRANTES DO GRUPO*
 - Anna Luiza Ferreira Costa / RGM: 48186198
 - Bruno da Silva Nascimento / RGM: 48078883
-- Kauan Ferreira da Silva Luiz
+- Kauan Ferreira da Silva Luiz / RGM: 47728035
 - Robert Aparecido Bezerra de Freitas / RGM: 47121351
 - Yasmin Gonçalves Pucci Salem / RGM: 48259357
 
