@@ -1,157 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheddar</title>
-</head>
-<body>
-    <header>
-         <div>
-            <img src="img/logo.jpeg" width="100" height="100">
-        </div>
-        <div class="container">
+<header>
+  <div>
+    <img src="/img/logo.jpeg" alt="Logo da Mont Ararat Hamburgueria" width="100" height="100">
+  </div>
+  <div class="container">
 
-            <nav align="right">
-                <!--Menu-->
-                <input type="checkbox" id="check"> <!--um bglh lá no JS-->
-                <label for="check">&#x268c;</label>
-                <ul>
-                    <a href="index.html">Início</a>
-                    <a href="sobrenos.html">Sobre</a>
-                    <a href="carrinho.html">Carrinho</a>
-                    <a href="#contato">Contato</a>
-                    <a href="avaliacoes.html">Avaliações</a>
-                </ul>
-            </nav>
+    <div>
+      <!--Menu-->
+      <!--<input type="checkbox" id="check"> um bglh lá no JS-->
+      <!-- <label for="check">&#x268c;</label>-->
+      <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/sobrenos.html">Sobre</a></li>
+        <li><a href="/pagamento/carrinho.html">Carrinho</a></li>
+        <li><a href="/avaliacoes.html">Avaliações</a></li>
+      </ul>
+    </div>
 
-        </div>
+  </div>
 
-    </header>
-    <main>
-        <img src="img/cheddar.jpeg" width="200" height="250">
-        <h2>Cheddar</h2>
-        <p>Pão australiano, cheddar cremoso, hamburguer 180 gramas, cheddar fatiado, cebola caramelizada</p>
-        <br>
-        <br>
-        <h3>Valores</h3>
-        <p>Lanche - R$34,00 (Incluso só o lanche)</p>
-        <p>Combo - R$42,00 (Inclui uma porção de batatas e um refrigerante)</p><br>
-    
-         <h3>O que vai preferir:</h3>
-            <label><input type="radio" name="valor" value="Lanche" checked> Lanche</label>
-            <label><input type="radio" name="valor" value="Combo"> Combo</label>
-<br>
-        <form action="/adicionar-ao-carrinho" method="POST">
+</header>
+<main>
+  <img src="img/cheddar.jpeg" width="200" height="250">
+  <h2>Cheddar</h2>
+  <p>Pão australiano, cheddar cremoso, hamburguer 180 gramas, cheddar fatiado, cebola caramelizada</p>
+  <br>
+  <br>
+  <h3>Valores</h3>
+  <p>Lanche - R$34,00 (Incluso só o lanche)</p>
+  <p>Combo - R$42,00 (Inclui uma porção de batatas e um refrigerante)</p><br>
 
-  
-  <hr>
+  <h3>O que vai preferir:</h3>
+  <label><input type="radio" name="valor" value="Lanche" checked> Lanche</label>
+  <label><input type="radio" name="valor" value="Combo"> Combo</label>
+  <br>
+  <form action="/adicionar-ao-carrinho" method="POST">
 
-  <h3>Escolha os extras:</h3>
 
-  <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="bacon">
-      burguer (+ R$ 10,00)
-    </label>
-    <select name="burguer" id="type">
+    <hr>
+
+    <h3>Escolha os extras:</h3>
+
+    <p>
+      <label>
+        <input type="checkbox" name="extra[]" value="bacon">
+        burguer (+ R$ 10,00)
+      </label>
+      <select name="burguer" id="type">
         <option value="burguer">Burguer Bovino</option>
         <option value="burguer">Burguer de Frango</option>
         <option value="burguer">Burguer de Linguiça</option>
-    </select>
-  </p>
+      </select>
+    </p>
 
-  <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="queijo">
-      Queijo Coalho (+ R$ 14,00)
-    </label>
-  </p>
+    <p>
+      <label>
+        <input type="checkbox" name="extra[]" value="queijo">
+        Queijo Coalho (+ R$ 14,00)
+      </label>
+    </p>
 
-  <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="hamburguer">
-      Salmão (+ R$ 16,00)
-    </label>
-  </p>
+    <p>
+      <label>
+        <input type="checkbox" name="extra[]" value="hamburguer">
+        Salmão (+ R$ 16,00)
+      </label>
+    </p>
 
-  <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="bacon">
-      Bacon (+ R$ 7,00)
-    </label>
-  </p>
+    <p>
+      <label>
+        <input type="checkbox" name="extra[]" value="bacon">
+        Bacon (+ R$ 7,00)
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="molho">
         Molhos (+ R$ 7,00)
         <select name="extra[]" id="typr">
-            <option value="molho">Catupiry</option>
-            <option value="molho">Cheddar</option>
-            <option value="molho">Cream Cheese</option>
+          <option value="molho">Catupiry</option>
+          <option value="molho">Cheddar</option>
+          <option value="molho">Cream Cheese</option>
         </select>
-    </label>
-  </p>
+      </label>
+    </p>
 
-  
-  <p>
-    <label>
+
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Mussarela (+ R$ 7,00)
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Cheddar Fatiado (+ R$ 7,00)
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Cebolas (+ R$ 7,00)
         <select name="extra[]" id="typr">
-            <option value="cebola">Empanada</option>
-            <option value="cebola">Caramelizada</option>
+          <option value="cebola">Empanada</option>
+          <option value="cebola">Caramelizada</option>
         </select>
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Pimenta Jalapeño(+ R$ 5,00)
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Picles (+ R$ 5,00)
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <p>
-    <label>
+    <p>
+      <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Pulled Porck (+ R$ 10,00)
-    </label>
-  </p>
+      </label>
+    </p>
 
-  <hr>
+    <hr>
 
-  <button type="submit">Adicionar ao Carrinho</button>
-</form>
-        
-<br>   
-        <a href="burguer.html"><button type="button">Anterior</button></a><a href="costela.html"><button type="button">Próximo</button></a>
+    <button type="submit">Adicionar ao Carrinho</button>
+  </form>
 
-    </main>
-    <footer>
-         <p>&copy;2026, Mont Ararat Hamburgueria.</p>
-    </footer>
+  <br>
+  <a href="/alimentos/burguer.html"><button type="button">Anterior</button></a><a href="/alimentos/costela.html"><button
+      type="button">Próximo</button></a>
+
+</main>
+<footer>
+  <p>&copy;2026, Mont Ararat Hamburgueria.</p>
+</footer>
 </body>
 </h
