@@ -51,3 +51,5 @@ Abaixo, estão algumas fotos e vídeos como prova da nossa visita e para compor 
     </td
 
 *Foto tirada pelo Kauan no momento da visita*
+
+<video src="vid/vídeo_ararat.mp4" controls width="100%"></video>
