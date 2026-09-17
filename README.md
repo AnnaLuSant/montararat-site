@@ -23,7 +23,7 @@ como cardápio, preços e fotos.
 
 
 Para montar o site, começamos organizando as fotos reais dos produtos do cardápio e criando um carrossel na página inicial. A partir disso, 
-fomos ajustando o visual e a estrutura das informações, organizando tudo em HTML ao longo de quatro páginas integradas:
+fomos ajustando o visual e a estrutura das informações, organizando tudo em HTML ao longo de quatro módulos integrados:
 
 - Início: Página principal do site, com uma breve apresentação dos lanches.
 - Sobre: Um pouco da história da hamburgueria, informações da empresa e a localização das lojas físicas.
@@ -68,7 +68,7 @@ Abaixo, estão as fotos como prova da nossa visita e para compor a documentaçã
       <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/kauan_no_ararat.jpeg?raw=true" width="40%" alt="Selfie do Kauan">
     </td
 
-*Foto tirada pelo Kauan no momento da visita*
+*Foto tirada pelo Kauan no momento da visita.*
 
 
 *CONCLUSÃO*
