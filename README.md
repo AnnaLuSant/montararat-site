@@ -36,21 +36,18 @@ Todos os arquivos do nosso site foram validados no W3C Validator (https://valida
 
 *IMAGENS E LICENÇA*
 
-A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaixo, estão algumas fotos e vídeos do estabelecimento,
-como prova de que fomos até eles:
+A empresa escolhida apoiou nossa ideia e concordou com o projeto do site. Como o Kauan é funcionário do local, ele conversou com a gerente, que autorizou o registro do estabelecimento. 
+Abaixo, estão algumas fotos e vídeos como prova da nossa visita e para compor a documentação do projeto:
 
 <td align="center" valign="middle" width="40%">
       <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/ararat_frente.jpeg?raw=true" width="40%" alt="Frente do Mont Ararat">
     </td>
 
-*Foto tirada pelo Kauan.*
-
-Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.
-
-O Kauan, por ser funcionário de lá, conversou com sua gerente e ela permitiu que ele tirasse fotos do local
-e utilizasse na documentação do nosso projeto.
+*Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.*
 
 
 <td align="center" valign="middle" width="40%">
       <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/kauan_no_ararat.jpeg?raw=true" width="40%" alt="Selfie do Kauan">
     </td
+
+*Foto tirada pelo Kauan no momento da visita*
