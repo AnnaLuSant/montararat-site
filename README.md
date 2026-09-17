@@ -40,9 +40,17 @@ A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaix
 como prova de que fomos até eles:
 
 <td align="center" valign="middle" width="40%">
-      <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/ararat_frente.jpeg?raw=true" width="40%" alt="Minato GIF">
+      <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/ararat_frente.jpeg?raw=true" width="40%" alt="Frente do Mont Ararat">
     </td>
 
 *Foto tirada pelo Kauan.*
 
 Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.
+
+O Kauan, por ser funcionário de lá, conversou com sua gerente e ela permitiu que ele tirasse fotos do local
+e utilizasse na documentação do nosso projeto.
+
+
+<td align="center" valign="middle" width="40%">
+      <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/kauan_no_ararat.jpeg?raw=true" width="40%" alt="Selfie do Kauan">
+    </td
