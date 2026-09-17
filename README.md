@@ -29,4 +29,8 @@ ajustar a indentação do código e ajudar no alinhamento da estrutura visual e 
 
 As principais dificuldades do grupo foram o fluxo de trabalho com o Git e GitHub e, especialmente, a conexão correta dos links 
 entre as páginas HTML, o que levou um tempo até conseguirmos ajustar tudo perfeitamente.
+
+*VALIDAÇÃO*
+
+[Nossos arquivos foram todos validados no W3C Validator] (https://www.bing.com/ck/a?!&&p=bc0d25dc88aad59f74ce913406a03658c1a23865516f4488984a61c7bb500e3bJmltdHM9MTc4OTUxNjgwMA&ptn=3&ver=2&hsh=4&fclid=3764d92b-8fa2-6cfb-2e88-cfdb8edb6d46&psq=validator+w3c&u=a1aHR0cHM6Ly92YWxpZGF0b3IudzMub3JnLw)
  
