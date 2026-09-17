@@ -39,6 +39,8 @@ Todos os arquivos do nosso site foram validados no W3C Validator (https://valida
 A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaixo, estão algumas fotos e vídeos do estabelecimento,
 como prova de que fomos até eles:
 
-![Foto tirada pelo Kauan.](./img/ararat_frente.jpg)
+<td align="center" valign="middle" width="40%">
+      <img src="https://giffiles.alphacoders.com/209/209880.gif" width="100%" alt="Minato GIF">
+    </td>
 *Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.*
  
