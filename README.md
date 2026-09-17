@@ -44,4 +44,5 @@ como prova de que fomos até eles:
     </td>
 
 *Foto tirada pelo Kauan.*
+
 Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.
