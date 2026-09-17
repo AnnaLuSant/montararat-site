@@ -39,8 +39,7 @@ Todos os arquivos do nosso site foram validados no W3C Validator (https://valida
 A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaixo, estão algumas fotos e vídeos do estabelecimento,
 como prova de que fomos até eles:
 
-<figure>
- <img scr="../img/ararat_frente.jpeg" alt="Foto da empresa" width="100%">
- <figcaption><em>Essa é uma foto da frente da hamburgueria, tirada pelo Kauan</figcaption>
-</figure>
+<div>
+ <img scr="/img/ararat_frente.jpeg" alt="Foto da empresa" width="100%">
+</div>
  
