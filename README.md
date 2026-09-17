@@ -39,7 +39,6 @@ Todos os arquivos do nosso site foram validados no W3C Validator (https://valida
 A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaixo, estão algumas fotos e vídeos do estabelecimento,
 como prova de que fomos até eles:
 
-<div>
- <img scr="/img/ararat_frente.jpeg" alt="Foto da empresa" width="100%">
-</div>
+![Foto tirada pelo Kauan.](./img/ararat_frente.jpg)
+*Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.*
  
