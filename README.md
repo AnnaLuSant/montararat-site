@@ -10,6 +10,11 @@
 A empresa escolhida pelo nosso grupo foi a Mont Ararat, uma hamburgueria localizada na zona leste de São Paulo. O objetivo do nosso projeto foi desenvolver a 
 interface de um site onde os clientes possam futuramente consultar o cardápio, fazer pedidos e ter uma navegação simples e agradável.
 
+*VISITA*
+
+A visita foi feita presencialmente, pelo Kauan. Ele explicou sobre o projeto e coletou os dados essenciais para o desenvolvimento,
+como cardápio, preços e fotos.
+
 *PROCESSO DE CONSTRUÇÃO*
 
 Para montar o site, começamos organizando as fotos reais dos produtos do cardápio e criando um carrossel na página inicial. A partir disso, 
@@ -36,14 +41,14 @@ Todos os arquivos do nosso site foram validados no W3C Validator (https://valida
 
 *IMAGENS E LICENÇA*
 
-A empresa escolhida apoiou nossa ideia e concordou com o projeto do site. Como o Kauan é funcionário do local, ele conversou com a gerente, que autorizou o registro do estabelecimento. 
-Abaixo, estão algumas fotos e vídeos como prova da nossa visita e para compor a documentação do projeto:
+A empresa apoiou nossa ideia e concordou com o projeto do site. Como o Kauan é um funcionário de lá, ele conversou com a gerente, que autorizou o registro do estabelecimento. 
+Abaixo, estão as fotos como prova da nossa visita e para compor a documentação do projeto:
 
 <td align="center" valign="middle" width="40%">
       <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/ararat_frente.jpeg?raw=true" width="40%" alt="Frente do Mont Ararat">
     </td>
 
-*Essa é a frente do Mont Ararat, as paredes na cor preta trazem uma estética mais discreta.*
+*Esse é o Mont Ararat, a empresa que escolhemos para desenvolver nosso projeto.*
 
 
 <td align="center" valign="middle" width="40%">
@@ -51,5 +56,3 @@ Abaixo, estão algumas fotos e vídeos como prova da nossa visita e para compor 
     </td
 
 *Foto tirada pelo Kauan no momento da visita*
-
-<video src="vid/vídeo_ararat.mp4" controls width="100%"></video>
