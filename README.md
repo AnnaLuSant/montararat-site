@@ -33,4 +33,14 @@ entre as páginas HTML, o que levou um tempo até conseguirmos ajustar tudo perf
 *VALIDAÇÃO*
 
 Todos os arquivos do nosso site foram validados no W3C Validator (https://validator.w3.org/nu/)
+
+*IMAGENS E LICENÇA*
+
+A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaixo, estão algumas fotos e vídeos do estabelecimento,
+como prova de que fomos até eles:
+
+<figure>
+ <img scr="img/araratfrente.jpeg" alt="Foto da empresa" width="100%">
+ <figcaption><em>Essa é uma foto da frente da hamburgueria, tirada pelo Kauan</figcaption>
+</figure>
  
