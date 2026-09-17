@@ -8,20 +8,20 @@
 <body>
     <header>
         <div>
-            <img src="img/logo.jpeg" width="100" height="100">
+            <img src="../img/logo.jpeg" width="100" height="100" alt="Logo Montararat">
         </div>
         <div class="container">
 
-            <nav align="right">
+            <nav style="text-align: right;">
                 <!--Menu-->
                 <input type="checkbox" id="check"> <!--um bglh lá no JS-->
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <a href="index.html">Início</a>
-                    <a href="sobrenos.html">Sobre</a>
-                    <a href="carrinho.html">Carrinho</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="avaliacoes.html">Avaliações</a>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
                 </ul>
             </nav>
 
@@ -29,8 +29,8 @@
     </header>
     <main>
       <h1>Finalizar Pagamento</h1>
-      <br><h3><em>Você pagará:</em></h3>
-    <table border="1">
+      <br><h2><em>Você pagará:</em></h2>
+    <table>
         <tr>
          <td><em>Item</em></td>
          <td><em>Valor</em></td>
@@ -45,14 +45,16 @@
         </tr>
         <tr>
          <td>x1 Milkshake Nutella</td>
-         <td>R$ 20,00</td><br>
+         <td>R$ 20,00</td>
+        </tr>
         <tr>
-        <td><em>Total</em></td>
-        <td>R$ 94,00</td>
+         <td><em>Total</em></td>
+         <td>R$ 94,00</td>
         </tr>
     </table>
  <div> 
      <article>
+        <h2>Informações para pagamento</h2>
       <br><br><form action="/cadastro" method="get">
             <fieldset>
                 <legend><em>Dados para o pagamento</em></legend><br>
@@ -78,7 +80,9 @@
             </fieldset>
         </form>
      </article>
-     <a href="compro.html"><button type="button">Finalizar Pagamento</button></a>
+     <button type="button" onclick="window.location.href='compro.html'">Finalizar Pagamento</button>
+    </div>
+    </main>
 
 </body>
 </html>
