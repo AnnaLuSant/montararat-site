@@ -7,39 +7,52 @@
 
 *INTRODUÇÃO*
 
+
 A empresa escolhida pelo nosso grupo foi a Mont Ararat, uma hamburgueria localizada na zona leste de São Paulo. O objetivo do nosso projeto foi desenvolver a 
 interface de um site onde os clientes possam futuramente consultar o cardápio, fazer pedidos e ter uma navegação simples e agradável.
 
+
 *VISITA*
+
 
 A visita foi feita presencialmente, pelo Kauan. Ele explicou sobre o projeto e coletou os dados essenciais para o desenvolvimento,
 como cardápio, preços e fotos.
 
+
 *PROCESSO DE CONSTRUÇÃO*
+
 
 Para montar o site, começamos organizando as fotos reais dos produtos do cardápio e criando um carrossel na página inicial. A partir disso, 
 fomos ajustando o visual e a estrutura das informações, organizando tudo em HTML ao longo de quatro páginas integradas:
 
 - Início: Página principal do site, com uma breve apresentação dos lanches.
 - Sobre: Um pouco da história da hamburgueria, informações da empresa e a localização das lojas físicas.
-- Carrinho:Interface do resumo da compra, com a exibição dos itens e valores.
+- Carrinho: Interface do resumo da compra, com a exibição dos itens e valores.
 - Contato: Canais diretos de atendimento, como telefone e WhatsApp.
 
+
 *USO DE IA*
+
 
 O uso de Inteligência Artificial no projeto foi bem pontual. Utilizamos o Google Gemini principalmente para tirar dúvidas de sintaxe em HTML,  
 ajustar a indentação do código e ajudar no alinhamento da estrutura visual e da organização das páginas.
 
+
 *DIFICULDADES*
+
 
 As principais dificuldades do grupo foram o fluxo de trabalho com o Git e GitHub e, especialmente, a conexão correta dos links 
 entre as páginas HTML, o que levou um tempo até conseguirmos ajustar tudo perfeitamente.
 
+
 *VALIDAÇÃO*
+
 
 Todos os arquivos do nosso site foram validados no W3C Validator (https://validator.w3.org/nu/)
 
+
 *IMAGENS E LICENÇA*
+
 
 A empresa apoiou nossa ideia e concordou com o projeto do site. Como o Kauan é um funcionário de lá, ele conversou com a gerente, que autorizou o registro do estabelecimento. 
 Abaixo, estão as fotos como prova da nossa visita e para compor a documentação do projeto:
@@ -56,3 +69,10 @@ Abaixo, estão as fotos como prova da nossa visita e para compor a documentaçã
     </td
 
 *Foto tirada pelo Kauan no momento da visita*
+
+
+*CONCLUSÃO*
+
+
+Esse é o panorama do nosso desenvolvimento até aqui. Mesmo que ainda existam etapas importantes pela frente, como o refinamento do visual e a 
+implementação do banco de dados, o projeto já possui uma base sólida e continua evoluindo constantemente.
