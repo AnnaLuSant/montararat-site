@@ -40,7 +40,7 @@ A empresa que escolhemos apoiou a ideia e concordou com o projeto do site, abaix
 como prova de que fomos até eles:
 
 <figure>
- <img scr="img/ararat frente.jpeg" alt="Foto da empresa" width="100%">
+ <img scr="img/ararat_frente.jpeg" alt="Foto da empresa" width="100%">
  <figcaption><em>Essa é uma foto da frente da hamburgueria, tirada pelo Kauan</figcaption>
 </figure>
  
