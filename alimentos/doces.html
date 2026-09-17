@@ -1,119 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
+
 <body>
     <header>
+        <div>
+            <img src="/img/logo.jpeg" alt="Logo da Mont Ararat Hamburgueria" width="100" height="100">
+        </div>
         <div class="container">
 
-            <!--logo-->
-            <div class="logo">
-                <p></p>
-                <img src="/img/logo.jpeg" height="100" width="100" alt="Hamburgueria">
-            </div>
-            <nav align="right">
+            <div>
                 <!--Menu-->
                 <!--<input type="checkbox" id="check"> um bglh lá no JS-->
-                <!--<label for="check">&#x268c;</label>-->
+                <!-- <label for="check">&#x268c;</label>-->
                 <ul>
-                    <a href="/index.html">Início</a>
-                    <a href="/sobrenos.html">Sobre</a>
-                    <a href="/pagamento/carrinho.html">Carrinho</a>
-                    <a href="#contato">Contato</a>
-                    <a href="/avaliacoes.html">Avaliações</a>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                    <li><a href="pagamento/carrinho.html">Carrinho</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
                 </ul>
-            </nav>
+            </div>
 
         </div>
-        <p></p>
-     <main>
-        <nav align="center">
+
+    </header>
+    <main>
+        <nav>
             <h1>Doces da Casa</h1>
         </nav>
         <br>
         <br>
-        <h3>Trudel da casa</h3>
+        <h2>Trudel da casa</h2>
         <p>Nutella, Sorvete, Amendoim, Morango</p>
         <br>
         <label>
             <input type="checkbox" name="extra[]" value="trudel">
-                Trudel da Casa 
+            Trudel da Casa
         </label>
-        <h3>Monte o seu doce</h3>
+        <h2>Monte o seu doce</h2>
         <h3>Escolha a massa:</h3>
-         <p>
-             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
-                Massa Tradicional 
+        <p>
+            <label>
+                <input type="checkbox" name="extra[]" value="trudel">
+                Massa Tradicional
             </label>
         </p>
         <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Massa de Nutella
             </label>
         </p>
         <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Massa de Doce de Leite
             </label>
         </p>
         <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Massa de Ovomaltine
             </label>
-         </p>
-         <br>
-        <h3>Sorvete:</h3>
+        </p>
+        <br>
+        <h2>Sorvete:</h2>
         <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Sorvete de Creme
             </label>
-         </p>
-         <br>
-        <h3>Frutas:</h3>
+        </p>
+        <br>
+        <h2>Frutas:</h2>
         <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Morango
             </label>
-         </p>
-         <p>
+        </p>
+        <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Banana
             </label>
-         </p> 
-         <br> 
-         <h3>Milk-Shake:</h3>
-         <p>
-         <label>
-             <input type="checkbox" name="extra[]" value="trudel">
-                Milk-Shake de Nutella
-        </label>
-         </p>
-         <p>
+        </p>
+        <br>
+        <h2>Milk-Shake:</h2>
+        <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
+                Milk-Shake de Nutella
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="extra[]" value="trudel">
                 Milk-Shake de Ovomaltine
             </label>
-         </p>
-         <p>
+        </p>
+        <p>
             <label>
-             <input type="checkbox" name="extra[]" value="trudel">
+                <input type="checkbox" name="extra[]" value="trudel">
                 Milk-Shake de Frutas Vermelhas
             </label>
-         </p>
-     </main>
+        </p>
+    </main>
     <footer>
-         <p>&copy;2026, Mont Ararat Hamburgueria.</p>
-     </footer>    
-    
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+                <div class="col-6">
+                    <p>Contato:</p>
+                    <br>
+                    <p>Endereço: <br> R. Vercínio Pereira de Souza, 1199 - São Mateus, São Paulo - SP, 03945-000</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <p>&copy;2026, Mont Ararat Hamburgueria.</p>
+    </footer>
+
 </body>
+
 </html>
