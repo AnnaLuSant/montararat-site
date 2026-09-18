@@ -8,20 +8,20 @@
 <body>
     <header>
          <div>
-            <img src="/img/logo.jpeg" width="100" height="100">
+            <img src="../img/logo.jpeg" width="100" height="100" alt="Logo Mont Ararat">
         </div>
         <div class="container">
 
-            <nav align="right">
+            <nav>
                 <!--Menu-->
                 <input type="checkbox" id="check"> <!--um bglh lá no JS-->
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <a href="/index.html">Início</a>
-                    <a href="/sobrenos.html">Sobre</a>
-                    <a href="/pagamento/carrinho.html">Carrinho</a>
-                    <a href="/contato.html">Contato</a>
-                    <a href="/avaliacoes.html">Avaliações</a>
+                  <li><a href="../index.html">Início</a></li>
+                  <li><a href="../sobrenos.html">Sobre</a></li>
+                  <li><a href="../carrinho.html">Carrinho</a></li>
+                  <li><a href="../contato.html">Contato</a></li>
+                  <li><a href="../avaliacoes.html">Avaliações</a></li>
                 </ul>
             </nav>
 
@@ -29,16 +29,16 @@
 
     </header>
     <main>
-        <img src="/img/vegetariano.jpeg" width="200" height="250">
-        <h2>Vegetariano</h2>
+        <img src="../img/vegetariano.jpeg" width="200" height="250" alt="Lanche vegetariano">
+        <h1>Vegetariano</h1>
         <p>Pão australiano, maionese da casa, rúcula, tomate seco, queijo coalho 200 gramas</p>
         <br>
         <br>
-        <h3>Valores</h3>
+        <h2>Valores</h2>
         <p>Lanche - R$39,00 (Incluso só o lanche)</p>
         <p>Combo - R$47,00 (Inclui uma porção de batatas e um refrigerante)</p><br>
     
-         <h3>O que vai preferir:</h3>
+         <h2>O que vai preferir:</h2>
             <label><input type="radio" name="valor" value="Lanche" checked> Lanche</label>
             <label><input type="radio" name="valor" value="Combo"> Combo</label>
 <br>
@@ -47,7 +47,7 @@
   
   <hr>
 
-  <h3>Escolha os extras:</h3>
+  <h2>Escolha os extras:</h2>
 
   <p>
     <label>
@@ -84,14 +84,14 @@
 
   <p>
     <label>
-        <input type="checkbox" name="extra[]" value="molho">
-        Molhos (+ R$ 7,00)
-        <select name="extra[]" id="typr">
-            <option value="molho">Catupiry</option>
-            <option value="molho">Cheddar</option>
-            <option value="molho">Cream Cheese</option>
-        </select>
+      <input type="checkbox" name="extra[]" value="molho">
+      Molhos (+ R$ 7,00)
     </label>
+    <select name="extra[]" id="molho-tipo">
+      <option value="molho-catupiry">Catupiry</option>
+      <option value="molho-cheddar">Cheddar</option>
+      <option value="molho-cream-cheese">Cream Cheese</option>
+    </select>
   </p>
 
   
@@ -113,11 +113,11 @@
     <label>
         <input type="checkbox" name="extra[]" value="adicional">
         Cebolas (+ R$ 7,00)
-        <select name="extra[]" id="typr">
-            <option value="cebola">Empanada</option>
-            <option value="cebola">Caramelizada</option>
-        </select>
     </label>
+    <select name="extra[]" id="cebola-tipo">
+      <option value="cebola-empanada">Empanada</option>
+      <option value="cebola-caramelizada">Caramelizada</option>
+    </select>
   </p>
 
   <p>
@@ -147,7 +147,8 @@
 </form>
         
 <br>   
-        <a href="/alimentos/salmão.html"><button type="button">Anterior</button></a><a href="/alimentos/porções.html"><button type="button">Próximo</button></a>
+        <a href="../alimentos/salmão.html">Anterior</a>
+        <a href="../alimentos/porções.html">Próximo</a>
     </main>
     <footer>
          <p>&copy;2026, Mont Ararat Hamburgueria.</p>

@@ -8,20 +8,20 @@
 <body>
     <header>
          <div>
-            <img src="/img/logo.jpeg" width="100" height="100">
+            <img src="../img/logo.jpeg" width="100" height="100" alt="Logo Mont Ararat">
         </div>
         <div class="container">
 
-            <nav align="right">
+            <nav>
                 <!--Menu-->
                 <input type="checkbox" id="check"> <!--um bglh lá no JS-->
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <a href="/index.html">Início</a>
-                    <a href="/sobrenos.html">Sobre</a>
-                    <a href="/pagamento/carrinho.html">Carrinho</a>
-                    <a href="/contato.html">Contato</a>
-                    <a href="/avaliacoes.html">Avaliações</a>
+                  <li><a href="../index.html">Início</a></li>
+                  <li><a href="../sobrenos.html">Sobre</a></li>
+                  <li><a href="../carrinho.html">Carrinho</a></li>
+                  <li><a href="../contato.html">Contato</a></li>
+                  <li><a href="../avaliacoes.html">Avaliações</a></li>
                 </ul>
             </nav>
 
@@ -29,12 +29,12 @@
 
     </header>
     <main>
-        <img src="/img/linguiça.jpeg" width="200" height="250">
-        <h2>Linguiça</h2>
+        <img src="../img/linguiça.jpeg" width="200" height="250" alt="Lanche de linguiça">
+        <h1>Linguiça</h1>
         <p>Pão de brioche com gergilim, alface americana, cebola roxa, maionese da casa, tomate,<br> hamburguer de linguiça 180 gramas, mussarela, bacon, catupiry</p>
         <br>
         <br>
-        <h3>Valores</h3>
+        <h2>Valores</h2>
         <p>Lanche - R$35,00 (Incluso só o lanche)</p>
         <p>Combo - R$43,00 (Inclui uma porção de batatas e um refrigerante)</p><br>
     
@@ -50,10 +50,8 @@
   <h3>Escolha os extras:</h3>
 
   <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="bacon">
-      burguer (+ R$ 10,00)
-    </label>
+    <input type="checkbox" id="extra-burguer" name="extra[]" value="bacon">
+    <label for="extra-burguer">burguer (+ R$ 10,00)</label>
     <select name="burguer" id="type">
         <option value="burguer">Burguer Bovino</option>
         <option value="burguer">Burguer de Frango</option>
@@ -62,83 +60,63 @@
   </p>
 
   <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="queijo">
-      Queijo Coalho (+ R$ 14,00)
-    </label>
+    <input type="checkbox" id="extra-queijo" name="extra[]" value="queijo">
+    <label for="extra-queijo">Queijo Coalho (+ R$ 14,00)</label>
   </p>
 
   <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="hamburguer">
-      Salmão (+ R$ 16,00)
-    </label>
+    <input type="checkbox" id="extra-salmao" name="extra[]" value="hamburguer">
+    <label for="extra-salmao">Salmão (+ R$ 16,00)</label>
   </p>
 
   <p>
-    <label>
-      <input type="checkbox" name="extra[]" value="bacon">
-      Bacon (+ R$ 7,00)
-    </label>
+    <input type="checkbox" id="extra-bacon" name="extra[]" value="bacon">
+    <label for="extra-bacon">Bacon (+ R$ 7,00)</label>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="molho">
-        Molhos (+ R$ 7,00)
-        <select name="extra[]" id="typr">
-            <option value="molho">Catupiry</option>
-            <option value="molho">Cheddar</option>
-            <option value="molho">Cream Cheese</option>
-        </select>
-    </label>
+    <input type="checkbox" id="extra-molho" name="extra[]" value="molho">
+    <label for="extra-molho">Molhos (+ R$ 7,00)</label>
+    <select name="extra[]" id="molho-tipo">
+      <option value="molho-catupiry">Catupiry</option>
+      <option value="molho-cheddar">Cheddar</option>
+      <option value="molho-cream-cheese">Cream Cheese</option>
+    </select>
   </p>
 
   
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Mussarela (+ R$ 7,00)
-    </label>
+    <input type="checkbox" id="extra-mussarela" name="extra[]" value="adicional">
+    <label for="extra-mussarela">Mussarela (+ R$ 7,00)</label>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Cheddar Fatiado (+ R$ 7,00)
-    </label>
+    <input type="checkbox" id="extra-cheddar" name="extra[]" value="adicional">
+    <label for="extra-cheddar">Cheddar Fatiado (+ R$ 7,00)</label>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Cebolas (+ R$ 7,00)
-        <select name="extra[]" id="typr">
-            <option value="cebola">Empanada</option>
-            <option value="cebola">Caramelizada</option>
-        </select>
-    </label>
+    <input type="checkbox" id="extra-cebolas" name="extra[]" value="adicional">
+    <label for="extra-cebolas">Cebolas (+ R$ 7,00)</label>
+    <select name="extra[]" id="cebola-tipo">
+      <option value="cebola-empanada">Empanada</option>
+      <option value="cebola-caramelizada">Caramelizada</option>
+    </select>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Pimenta Jalapeño(+ R$ 5,00)
-    </label>
+    <input type="checkbox" id="extra-jalapeno" name="extra[]" value="adicional">
+    <label for="extra-jalapeno">Pimenta Jalapeño (+ R$ 5,00)</label>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Picles (+ R$ 5,00)
-    </label>
+    <input type="checkbox" id="extra-picles" name="extra[]" value="adicional">
+    <label for="extra-picles">Picles (+ R$ 5,00)</label>
   </p>
 
   <p>
-    <label>
-        <input type="checkbox" name="extra[]" value="adicional">
-        Pulled Porck (+ R$ 10,00)
-    </label>
+    <input type="checkbox" id="extra-pulled-pork" name="extra[]" value="adicional">
+    <label for="extra-pulled-pork">Pulled Porck (+ R$ 10,00)</label>
   </p>
 
   <hr>
@@ -147,7 +125,8 @@
 </form>
         
 <br>   
-        <a href="/alimentos/frango.html"><button type="button">Anterior</button></a><a href="/alimentos/salmão.html"><button type="button">Próximo</button></a>
+        <a href="../alimentos/frango.html">Anterior</a>
+        <a href="../alimentos/salmão.html">Próximo</a>
     </main>
     <footer>
          <p>&copy;2026, Mont Ararat Hamburgueria.</p>
