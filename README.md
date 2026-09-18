@@ -76,3 +76,6 @@ Abaixo, estão as fotos como prova da nossa visita e para compor a documentaçã
 
 Esse é o panorama do nosso desenvolvimento até aqui. Mesmo que ainda existam etapas importantes pela frente, como o refinamento do visual e a 
 implementação do banco de dados, o projeto já possui uma base sólida e continua evoluindo constantemente.
+
+
+*ACESSE O SITE ONLINE:* [montararat.netlify.app](https://montararat.netlify.app/)
