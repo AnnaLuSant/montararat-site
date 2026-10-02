@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pagamento</title>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="logo">
+<a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="../assets/img/logo.jpeg" width="100"/></a>
+</div>
+<nav aria-label="Navegação principal" class="main-nav">
+<ul>
+<li><a href="../index.html">Início</a></li>
+<li><a href="sobrenos.html">Sobre</a></li>
+<li><a href="carrinho.html">Carrinho</a></li>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="avaliacoes.html">Avaliações</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Finalizar Pagamento</h1>
+
+<section aria-labelledby="voce-pagara">
+<h2 id="voce-pagara">Você pagará:</h2>
+<table>
+<caption>Resumo do pedido</caption>
+<thead>
+<tr>
+<th scope="col">Item</th>
+<th scope="col">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x1 Combo Costela</td>
+<td>R$ 45,00</td>
+</tr>
+<tr>
+<td>x1 Porção Coxinha (6 Unidades)</td>
+<td>R$ 29,00</td>
+</tr>
+<tr>
+<td>x1 Milkshake Nutella</td>
+<td>R$ 20,00</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>R$ 94,00</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section aria-labelledby="info-pagamento">
+<h2 id="info-pagamento">Informações para pagamento</h2>
+<form action="/cadastro" method="get">
+<fieldset>
+<legend>Dados para o pagamento</legend>
+<p>
+<label for="nome">Nome completo</label>
+<input id="nome" name="nome" required="" type="text"/>
+</p>
+<p>
+<label for="cpf">CPF</label>
+<input id="cpf" name="cpf" required="" type="text"/>
+</p>
+<p>
+<label for="cartao">Número do cartão</label>
+<input id="cartao" name="cartao" required="" type="text"/>
+</p>
+<p>
+<label for="validade">Validade</label>
+<input id="validade" name="validade" required="" type="text"/>
+</p>
+<p>
+<label for="cvv">CVV</label>
+<input id="cvv" name="cvv" required="" type="text"/>
+</p>
+<p>
+<label for="pix">PIX</label>
+<input id="pix" name="metodo_pagamento" required="" type="radio" value="pix"/>
+<details>
+<summary style="cursor: pointer; font-weight: bold;">PIX (Clique para gerar a chave)</summary>
+<div style="margin-top: 10px; padding: 10px; border: 1px dashed #ccc; background-color: #f9f9f9;">
+<p><strong>Copia e Cola:</strong></p>
+<code id="pix-code">00020126360014BR.GOV.BCB.PIX0114+5511999999999520400005303986540510.005802BR5913Nome Recebedor6008SPO62070503***6304E2CA</code>
+</div>
+</details>
+</p>
+</fieldset>
+</form>
+<button onclick="window.location.href='compro.html'" type="button">Finalizar Pagamento</button>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 Mont Ararat Hamburgueria.</p>
+</footer>
+</body>
+</html>
