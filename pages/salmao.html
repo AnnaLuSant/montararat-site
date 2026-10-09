@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Salmão</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="../../index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
+                    width="100" /></a>
+        </div>
+        <nav aria-label="Navegação principal" class="main-nav">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../sobrenos.html">Sobre</a></li>
+                <li><a href="../carrinho.html">Carrinho</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="../avaliacoes.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <figure><img alt="Hambúrguer de salmão" src="../../assets/img/salmao.jpeg" width="200" />
+                <figcaption>Salmão</figcaption>
+            </figure>
+            <h1>Salmão</h1>
+            <p>Pão australiano, cream chesse, rúcula, hamburguer de salmão 150 gramas, cebolinha</p>
+            <section aria-labelledby="valores">
+                <h2 id="valores">Valores</h2>
+                <p>Lanche - R$40,00 (Incluso só o lanche)</p>
+                <p>Combo - R$48,00 (Inclui uma porção de batatas e um refrigerante)</p>
+            </section>
+            <section aria-labelledby="preferir">
+                <fieldset>
+                    <legend>O que vai preferir:</legend><label><input checked="" name="valor" type="radio"
+                            value="Lanche" /> Lanche</label><label><input name="valor" type="radio" value="Combo" />
+                        Combo</label>
+                </fieldset>
+            </section>
+            <form action="/adicionar-ao-carrinho" method="POST">
+                <fieldset>
+                    <legend>Escolha os extras:</legend>
+                    <p>
+                        <input id="extra-burguer" name="extra[]" type="checkbox" value="bacon" />
+                        <label for="extra-burguer">burguer (+ R$ 10,00)</label>
+                        <select id="type" name="burguer">
+                            <option value="burguer">Burguer Bovino</option>
+                            <option value="burguer">Burguer de Frango</option>
+                            <option value="burguer">Burguer de Linguiça</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input id="extra-queijo" name="extra[]" type="checkbox" value="queijo" />
+                        <label for="extra-queijo">Queijo Coalho (+ R$ 14,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-salmao" name="extra[]" type="checkbox" value="hamburguer" />
+                        <label for="extra-salmao">Salmão (+ R$ 16,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-bacon" name="extra[]" type="checkbox" value="bacon" />
+                        <label for="extra-bacon">Bacon (+ R$ 7,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
+                        <label for="extra-molho">Molhos (+ R$ 7,00)</label>
+                        <label for="molho-tipo">Tipo de molho:</label>
+                        <select id="molho-tipo" name="extra[]">
+                            <option value="catupiry">Catupiry</option>
+                            <option value="cheddar">Cheddar</option>
+                            <option value="cream-cheese">Cream Cheese</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input id="extra-mussarela" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-mussarela">Mussarela (+ R$ 7,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-cheddar" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-cheddar">Cheddar Fatiado (+ R$ 7,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-cebolas" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-cebolas">Cebolas (+ R$ 7,00)</label>
+                        <select id="cebola-tipo" name="extra[]">
+                            <option value="empanada">Empanada</option>
+                            <option value="caramelizada">Caramelizada</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input id="extra-jalapeno" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-jalapeno">Pimenta Jalapeño(+ R$ 5,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-picles" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-picles">Picles (+ R$ 5,00)</label>
+                    </p>
+                    <p>
+                        <input id="extra-pulled-pork" name="extra[]" type="checkbox" value="adicional" />
+                        <label for="extra-pulled-pork">Pulled Porck (+ R$ 10,00)</label>
+                    </p>
+                    <hr /><button type="submit">Adicionar ao Carrinho</button>
+                </fieldset>
+            </form>
+        </article>
+        <nav aria-label="Navegação entre produtos">
+            <ul class="paginacao-produtos">
+                <li><a href="linguica.html">Anterior</a></li>
+                <li><a href="vegetariano.html">Próximo</a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
+    </footer>
+</body>
+
+</html>

@@ -58,14 +58,14 @@ A empresa apoiou nossa ideia e concordou com o projeto do site. Como o Kauan é 
 Abaixo, estão as fotos como prova da nossa visita e para compor a documentação do projeto:
 
 <td align="center" valign="middle" width="40%">
-      <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/ararat_frente.jpeg?raw=true" width="40%" alt="Frente do Mont Ararat">
+      <img src="/assets/img/ararat_frente.jpeg" width="40%" alt="Frente do Mont Ararat">
     </td>
 
 *Esse é o Mont Ararat, a empresa que escolhemos para desenvolver nosso projeto.*
 
 
 <td align="center" valign="middle" width="40%">
-      <img src="https://github.com/AnnaLuSant/montararat-site/blob/main/img/kauan_no_ararat.jpeg?raw=true" width="40%" alt="Selfie do Kauan">
+      <img src="/assets/img/kauan_no_ararat.jpeg" width="40%" alt="Selfie do Kauan">
     </td
 
 *Foto tirada pelo Kauan no momento da visita.*
