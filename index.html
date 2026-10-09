@@ -7,6 +7,7 @@
   <title>Mont Ararat Hamburgueria</title>
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -31,496 +32,230 @@
       <h2>Embarque nessa montanha de sabores!</h2>
       <p>Aqui você encontra os melhores hambúrgueres da região.</p>
     </section>
+    <section class="video-destaque">
+      <figure>
+        <video autoplay="" controls="" loop="" muted="" poster="assets/img/capa_vid.png" width="640">
+          <source src="assets/vid/video.mp4" type="video/mp4" />
+        </video>
+        <figcaption>Conheça o espaço da Mont Ararat</figcaption>
+      </figure>
+    </section>
 
-    <<<<<<< HEAD <div>
-      <!--Menu-->
-      <!--<input type="checkbox" id="check"> um bglh lá no JS-->
-      <!-- <label for="check">&#x268c;</label>-->
-      <ul>
-        <<<<<<< HEAD <a href="index.html">Início</a>
-          <a href="sobrenos.html">Sobre</a>
-          <a href="pagamento/carrinho.html">Carrinho</a>
-          <a href="avaliacoes.html">Avaliações</a>
-
-          =======
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobrenos.html">Sobre</a></li>
-          <li><a href="carrinho.html">Carrinho</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="avaliacoes.html">Avaliações</a></li>
-          >>>>>>> 1f2e4f7a55baa15eb282152d4637fedbf2a18ade
-      </ul>
+    <!--CARDÁPIO-->
+    <section class="cardapio">
+      <h2>Cardápio</h2>
+      <div class="carousel slide slide carousel-dark" id="carouselCardapio">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="card m-5" style="width: 18rem;">
+                    <img alt="lanche burguer" class="card-img-top" height="380" src="assets/img/burguer2.jpeg"
+                      width="200">
+                    <div class="card-body">
+                      <h3 class="card-title">Burguer</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/burguer.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img alt="lanche cheddar" class="card-img-top" src="assets/img/cheddar.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Cheddar</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/cheddar.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img alt="lanche costela" class="card-img-top" src="assets/img/costela.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Costela</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/costela.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="card m-5" style="width: 18rem;">
+                    <img alt="lanche frango" class="card-img-top" src="assets/img/frango.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Frango</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/frango.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img alt="lanche linguiça" class="card-img-top" src="assets/img/linguica.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Linguiça</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/linguica.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img alt="lanche salmão" class="card-img-top" src="assets/img/salmao.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Salmão</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/salmao.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <div class="card m-5" style="width: 18rem;">
+                    <img alt="lanche vegetariano" class="card-img-top" src="assets/img/vegetariano.jpeg" />
+                    <div class="card-body">
+                      <h3 class="card-title">Vegetariano</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/vegetariano.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <img alt="porções" class="card-img-top" height="350" src="assets/img/porcoes.png" width="200" />
+                    <div class="card-body">
+                      <h3 class="card-title">Porções</h3>
+                      <a class="btn btn-outline-secondary" href="pages/alimentos/porcoes.html">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselCardapio" type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselCardapio" type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
-      =======
-      <section class="video-destaque">
-        <figure>
-          <video autoplay="" controls="" loop="" muted="" poster="assets/img/capa_vid.png" width="640">
-            <source src="assets/vid/video.mp4" type="video/mp4" />
-          </video>
-          <figcaption>Conheça o espaço da Mont Ararat</figcaption>
-        </figure>
-      </section>
-      >>>>>>> c81e3c7042594e9fe969eed28e0c51e4ca666b23
+    </section>
 
-      <!--CARDÁPIO-->
-      <section class="cardapio">
-        <h2>Cardápio</h2>
-        <div class="carousel slide slide carousel-dark" id="carouselCardapio">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="card m-5" style="width: 18rem;">
-                      <img alt="lanche burguer" class="card-img-top" height="380" src="assets/img/burguer2.jpeg"
-                        width="200" />
-                      <div class="card-body">
-                        <h3 class="card-title">Burguer</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/burguer.html">Ver Mais</a>
-                      </div>
+    </header>
+
+
+    <!--SOBREMESA-->
+    <section class="mt-5">
+
+      <h2 class="text-center">Sobremesas</h2>
+      <br>
+
+      <div id="carouselSobremesa" class="carousel slide carousel-dark">
+
+        <div class="carousel-inner">
+
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <div class="card m-5" style="width: 35rem;">
+                    <img src="assets/img/sobremesa.png" alt="sobremesa" class="card-img-top"
+                      style="height:25rem; object-fit: cover;">
+
+                    <div class="card-body">
+                      <h3>Sobremesas</h3>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                      <img alt="lanche cheddar" class="card-img-top" src="assets/img/cheddar.jpeg" />
-                      <div class="card-body">
-                        <h3 class="card-title">Cheddar</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/cheddar.html">Ver Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                      <img alt="lanche costela" class="card-img-top" src="assets/img/costela.jpeg" />
-                      <div class="card-body">
-                        <h3 class="card-title">Costela</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/costela.html">Ver Mais</a>
-                      </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="assets/img/aqlla.png" alt="Trudel da casa" class="card-img-top" width="200" height="350">
+                    <div class="card-body">
+                      <h5 class="card-title">Porções</h5>
+                      <p class="card-text"></p>
+
+                      <h3 class="card-title">Trudel da Casa</h3>
+
+                      <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="card m-5" style="width: 18rem;">
-                      <img alt="lanche frango" class="card-img-top" src="assets/img/frango.jpeg" />
-                      <div class="card-body">
-                        <h3 class="card-title">Frango</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/frango.html">Ver Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                      <img alt="lanche linguiça" class="card-img-top" src="assets/img/linguica.jpeg" />
-                      <div class="card-body">
-                        <h3 class="card-title">Linguiça</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/linguica.html">Ver Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                      <img alt="lanche salmão" class="card-img-top" src="assets/img/salmao.jpeg" />
-                      <div class="card-body">
-                        <h3 class="card-title">Salmão</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/salmao.html">Ver Mais</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container text-center">
+
+          </div>
+
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item">
+
+            <div class="container text-center">
+
+              <div class="container align-items-center">
                 <div class="row align-items-center">
                   <div class="col-8">
                     <div class="card m-5" style="width: 18rem;">
-                      <img alt="lanche vegetariano" class="card-img-top" src="assets/img/vegetariano.jpeg" />
+                      <img src="assets/img/milkshake.png" alt="Milk-Shake de Frutas Vermelhas" class="card-img-top" width="200"
+                        height="350">
                       <div class="card-body">
-                        <h3 class="card-title">Vegetariano</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/vegetariano.html">Ver Mais</a>
+                        <h3 class="card-title">Milk-shake de Frutas Vermelhas</h3>
+                        <p class="card-text"></p>
+                        <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
                       </div>
                     </div>
                   </div>
+
                   <div class="col-4">
                     <div class="card" style="width: 18rem;">
-                      <img alt="porções" class="card-img-top" height="350" src="assets/img/porcoes.png" width="200" />
+                      <img src="assets/img/milkshakeChoco.png" alt="Milk-Shake de Nutella" class="card-img-top" width="200"
+                        height="350">
                       <div class="card-body">
-                        <h3 class="card-title">Porções</h3>
-                        <a class="btn btn-outline-secondary" href="pages/alimentos/porcoes.html">Ver Mais</a>
+                        <h3 class="card-title">Milk-shake de Nutella</h3>
+                        <p class="card-text"></p>
+                        <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
+
           </div>
-          <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselCardapio" type="button">
-            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselCardapio" type="button">
-            <span aria-hidden="true" class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
         </div>
-      </section>
-
-      <<<<<<< HEAD </header>
-
-        <main>
-          <nav>
-            <h1>Mont Ararat Hamburgueria</h1>
-            <h2>Embarque nessa montanha de sabores!</h2>
-            <p>Aqui você encontra os melhores hambúrgueres da região.</p>
-          </nav>
-          <br>
 
 
-          <nav>
-            <video controls width="640" poster="img/capa_vid.png" loop muted autoplay>
-              <source src="vid/video.mp4" type="video/mp4">
-            </video>
-            <br>
-            <br>
-            <br>
-          </nav>
-        </main>
-        <nav>
-          <h2>Cardápio</h2>
+        <!-- BOTÃO ANTERIOR -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSobremesa" data-bs-slide="prev">
 
-        </nav>
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
 
-        <!--CARDÁPIO-->
-
-        <section>
-          <div id="carouselCardapio" class="carousel slide slide carousel-dark">
-            <div class="carousel-inner">
-              <div class="carousel-item active ">
-                <div class="container text-center ">
-                  <div class="row align-items-center">
-                    <div class="col ">
-                      <div class="card m-5" style="width: 18rem;">
-                        <img src="img/burguer2.jpeg" class="card-img-top" alt="lanche burguer" width="200" height="380">
-                        <div class="card-body">
-                          <h2 class="card-title">Burguer</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/burguer.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/cheddar.jpeg" class="card-img-top" alt="lanche cheddar">
-                        <div class="card-body">
-                          <h2 class="card-title">Cheddar</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/cheddar.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/costela.jpeg" class="card-img-top" alt="lanche costela">
-                        <div class="card-body">
-                          <h2 class="card-title">Costela</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/costela.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container text-center">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <div class="card m-5" style="width: 18rem;">
-                        <img src="img/frango.jpeg" class="card-img-top" alt="lanche frango">
-                        <div class="card-body">
-                          <h2 class="card-title">Frango</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/frango.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/linguiça.jpeg" class="card-img-top" alt="lanche linguiça">
-                        <div class="card-body">
-                          <h2 class="card-title">Linguiça</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/linguiça.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/salmão.jpeg" class="card-img-top" alt="lanche salmão">
-                        <div class="card-body">
-                          <h2 class="card-title">Salmão</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/salmão.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container text-center">
-                  <div class="row align-items-center">
-                    <div class="col-8">
-                      <div class="card m-5" style="width: 18rem;">
-                        <img src="img/vegetariano.jpeg" class="card-imZZg-top" alt="lanche vegetariano">
-                        <div class="card-body">
-                          <h2 class="card-title">Vegetariano</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/vegetariano.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/porcoes.png" alt="porções" class="card-img-top" width="200" height="350">
-                        <div class="card-body">
-                          <h2 class="card-title">Porções</h2>
-                          <p class="card-text"></p>
-                          <a href="alimentos/porções.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCardapio" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCardapio" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </button>
 
 
-        </section>
-        <!--SOBREMESA-->
-        <section class="mt-5">
+        <!-- BOTÃO PRÓXIMO -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSobremesa" data-bs-slide="next">
 
-          <h2 class="text-center">Sobremesas</h2>
-          <br>
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
 
-          <div id="carouselSobremesa" class="carousel slide carousel-dark">
+        </button>
 
-            <div class="carousel-inner">
+      </div>
 
-              <!-- SLIDE 1 -->
-              <div class="carousel-item active">
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-8">
-                      <div class="card m-5" style="width: 35rem;">
-                        <img src="img/sobremesa.png" alt="sobremesa" class="card-img-top"
-                          style="height:25rem; object-fit: cover;">
-
-                        <div class="card-body">
-                          <h3>Sobremesas</h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem;">
-                        <img src="img/aqlla.png" alt="Trudel da casa" class="card-img-top" width="200" height="350">
-                        <div class="card-body">
-                          <<<<<<< HEAD <h5 class="card-title">Porções</h5>
-                            <p class="card-text"></p>
-                            =======
-                            <h3 class="card-title">Trudel da Casa</h3>
-
-                            >>>>>>> 1f2e4f7a55baa15eb282152d4637fedbf2a18ade
-                            <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <!-- SLIDE 2 -->
-              <div class="carousel-item">
-
-                <div class="container text-center">
-
-                  <div class="container align-items-center">
-                    <div class="row align-items-center">
-                      <div class="col-8">
-                        <div class="card m-5" style="width: 18rem;">
-                          <img src="img/milkshake.png" alt="Milk-Shake de Frutas Vermelhas" class="card-img-top"
-                            width="200" height="350">
-                          <div class="card-body">
-                            <h3 class="card-title">Milk-shake de Frutas Vermelhas</h3>
-                            <p class="card-text"></p>
-                            <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                          <img src="img/milkshakeChoco.png" alt="Milk-Shake de Nutella" class="card-img-top" width="200"
-                            height="350">
-                          <div class="card-body">
-                            <h3 class="card-title">Milk-shake de Nutella</h3>
-                            <p class="card-text"></p>
-                            <a href="alimentos/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-
-
-            <!-- BOTÃO ANTERIOR -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSobremesa"
-              data-bs-slide="prev">
-
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Anterior</span>
-
-            </button>
-
-
-            <!-- BOTÃO PRÓXIMO -->
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselSobremesa"
-              data-bs-slide="next">
-
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Próximo</span>
-
-            </button>
-
-          </div>
-
-        </section>
-        <footer>
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
-                  width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
-              </div>
-
-              <div class="col-6">
-                <p>Contato:
-                  <br>
-                  Telefone: +55 (11) 96918-8936 <br>
-                  Instagram: @montararatburger <br>
-                  Facebook: Mont Ararat Burger House
-                <p>Endereço: <br> R. Vercínio Pereira de Souza, 1199 - São Mateus, São Paulo - SP, 03945-000</p>
-                <br>
-              </div>
-            </div>
-          </div>
-          <p>&copy;2026, Mont Ararat Hamburgueria.</p>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-          crossorigin="anonymous"></script>
-        =======
-        <!--SOBREMESA-->
-        <section class="sobremesas mt-5">
-          <h2 class="text-center">Sobremesas</h2>
-          <div class="carousel slide carousel-dark" id="carouselSobremesa">
-            <div class="carousel-inner">
-              <!-- SLIDE 1 -->
-              <div class="carousel-item active">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-8">
-                      <div class="card m-5" style="width: 35rem;">
-                        <img alt="sobremesa" class="card-img-top" src="assets/img/sobremesa.png"
-                          style="height:25rem; object-fit: cover;" />
-                        <div class="card-body">
-                          <h3>Sobremesas</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem;">
-                        <img alt="Trudel da casa" class="card-img-top" height="350" src="assets/img/aqlla.png"
-                          width="200" />
-                        <div class="card-body">
-                          <h3 class="card-title">Trudel da Casa</h3>
-                          <a class="btn btn-outline-secondary" href="pages/alimentos/doces.html">Ver Mais</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SLIDE 2 -->
-              <div class="carousel-item">
-                <div class="container text-center">
-                  <div class="container align-items-center">
-                    <div class="row align-items-center">
-                      <div class="col-8">
-                        <div class="card m-5" style="width: 18rem;">
-                          <img alt="Milk-Shake de Frutas Vermelhas" class="card-img-top" height="350"
-                            src="assets/img/milkshake.png" width="200" />
-                          <div class="card-body">
-                            <h3 class="card-title">Milk-shake de Frutas Vermelhas</h3>
-                            <a class="btn btn-outline-secondary" href="pages/alimentos/doces.html">Ver Mais</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                          <img alt="Milk-Shake de Nutella" class="card-img-top" height="350"
-                            src="assets/img/milkshakeChoco.png" width="200" />
-                          <div class="card-body">
-                            <h3 class="card-title">Milk-shake de Nutella</h3>
-                            <a class="btn btn-outline-secondary" href="pages/alimentos/doces.html">Ver Mais</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- BOTÃO ANTERIOR -->
-            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselSobremesa"
-              type="button">
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <!-- BOTÃO PRÓXIMO -->
-            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselSobremesa"
-              type="button">
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
-          </div>
-        </section>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container">
@@ -542,7 +277,6 @@
   </footer>
   <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  >>>>>>> c81e3c7042594e9fe969eed28e0c51e4ca666b23
 </body>
 
 </html>
