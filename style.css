@@ -64,8 +64,14 @@ video{
     width: 60%; 
 }
 
+p {
+    text-align: center;
+    color: var(--creme)
+    
 
+}
 
-
-
-
+figcaption {
+    text-align: center;
+    color: var(--creme);
+}
