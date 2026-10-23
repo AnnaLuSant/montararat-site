@@ -13,13 +13,13 @@ header {
     background-color: var(--pretoCarvao);
     display: flex;
     gap: 10px;
-    
+
 }
 
 body {
     background: linear-gradient(45deg, var(--pretoCarvao), var(--marromCarvao));
     font-family: "Oswald", sans-serif;
-    
+
 }
 
 
@@ -30,7 +30,7 @@ nav ul {
     list-style: none;
     text-align: center;
     padding-top: 37px;
-    
+
 }
 
 .logo img {
@@ -40,6 +40,14 @@ nav ul {
     margin-left: 10px;
 }
 
+nav ul li a img {
+    position: absolute;
+    top: 10;
+    /* Cola no topo */
+    right: 0;
+    margin-right: 10px;
+}
+
 nav ul li a {
     /*Remover o sublinhado do texto*/
     text-decoration: none;
@@ -47,31 +55,91 @@ nav ul li a {
 
 }
 
-main h1{
+main h1 {
     margin-top: 20px;
     color: var(--creme);
     text-align: center;
 }
 
-main h1, h2{
+main h1,
+h2 {
     color: var(--creme);
     text-align: center;
 }
 
-video{
-    display: block;      /* Transforma o vídeo em elemento de bloco */
-    margin: 0 auto;      /* Centraliza horizontalmente (topo/fundo 0, esquerda/direita auto) */
-    width: 60%; 
+video {
+    display: block;
+    /* Transforma o vídeo em elemento de bloco */
+    margin: 0 auto;
+    /* Centraliza horizontalmente (topo/fundo 0, esquerda/direita auto) */
+    width: 60%;
 }
 
 p {
     text-align: center;
     color: var(--creme)
-    
-
 }
 
 figcaption {
     text-align: center;
     color: var(--creme);
+}
+
+/*-------------- ESTRELAS ----------------*/
+.avaliacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.avaliacao input {
+    position: absolute;
+    opacity: 0;
+}
+
+.avaliacao label {
+    font-size: 40px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Estrelas selecionadas */
+.avaliacao input:checked~label {
+    color: #ffbf00;
+}
+
+/* Efeito ao passar o mouse */
+.avaliacao label:hover,
+.avaliacao label:hover~label {
+    color: #ffbf00;
+}
+
+/* Acessibilidade pelo teclado */
+.avaliacao input:focus-visible+label {
+    outline: 2px solid #ffbf00;
+    border-radius: 4px;
+}
+
+/*-------------- SETAS CARROSSEL ----------------*/
+
+/* Estilo das setas */
+#carouselSobremesa .seta-carousel {
+    color: #F5E6C8;
+    font-size: 35px;
+    transition: 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+#carouselSobremesa .carousel-control-prev:hover .seta-carousel,
+#carouselSobremesa .carousel-control-next:hover .seta-carousel {
+    color: #FFFFFF;
+    transform: scale(1.2);
+}
+
+/* Ajuste da transparência do botão */
+#carouselSobremesa .carousel-control-prev,
+#carouselSobremesa .carousel-control-next {
+    opacity: 1;
 }
