@@ -95,3 +95,24 @@ button {
     margin-left: 20px;
     margin-right: auto;
 }
+
+form p {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+legend {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+fieldset {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
