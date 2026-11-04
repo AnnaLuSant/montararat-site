@@ -53,7 +53,7 @@ main h1{
     text-align: center;
 }
 
-main h1, h2{
+main h1, h2, h3, h4, h5{
     color: var(--creme);
     text-align: center;
 }
@@ -75,3 +75,46 @@ figcaption {
     text-align: center;
     color: var(--creme);
 }
+
+table {
+    margin-left: 20px;
+    margin-right: auto;
+    color: var(--creme);
+}
+
+figure {
+    text-align: center;
+}
+
+caption {
+    color: var(--creme);
+}
+
+button {
+    color: #111110;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+form p {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+legend {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+fieldset {
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
