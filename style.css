@@ -135,4 +135,14 @@ fieldset {
     margin-right: auto;
 }
 
+.container {
+    background-color: var(--pretoGrafite);
+    border-radius: 10px;
+}
+
+.pages-sobrenos h1 h5 {
+    color: var(--creme);
+    text-align: center;
+    
+}
 
