@@ -84,6 +84,8 @@ table {
 
 figure {
     text-align: center;
+    margin-left: auto
+    margin-right: auto;
 }
 
 caption {
@@ -115,4 +117,24 @@ fieldset {
     text-align: left;
     margin-left: 20px;
     margin-right: auto;
+}
+
+label {                  /* Adiciona um estilo para os elementos <label> */
+    color: var(--creme);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+li {                    /* Adiciona um estilo para o "próximo" e "anterior" das páginas dos lanches  */
+    color: var(--creme); 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {             /* Adiciona linhas divisórias ao redor dos campos dos formulários dos lanches*/
+    border: 1px solid var(--creme);
+    padding: 10px;
+    margin-bottom: 20px;
 }

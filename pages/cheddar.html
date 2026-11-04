@@ -30,15 +30,13 @@
   </header>
   <main>
     <article>
-      <figure><img alt="hamburguer de cheddar" src="../../assets/img/cheddar.jpeg" width="200" />
-        <figcaption>Cheddar</figcaption>
-      </figure>
+      <figure><img alt="hamburguer de cheddar" src="../../assets/img/cheddar.jpeg" width="200" /></figure>
       <h1>Cheddar</h1>
-      <p>Pão australiano, cheddar cremoso, hamburguer 180 gramas, cheddar fatiado, cebola caramelizada</p>
+      <h5>Pão australiano, cheddar cremoso, hamburguer 180 gramas, cheddar fatiado, cebola caramelizada</h5><br>
       <section aria-labelledby="valores">
         <h2 id="valores">Valores</h2>
-        <p>Lanche - R$34,00 (Incluso só o lanche)</p>
-        <p>Combo - R$42,00 (Inclui uma porção de batatas e um refrigerante)</p>
+        <h5>Lanche - R$34,00 (Incluso só o lanche)</h5>
+        <h5>Combo - R$42,00 (Inclui uma porção de batatas e um refrigerante)</h5><br>
       </section>
       <section aria-labelledby="preferir">
         <fieldset>
@@ -79,9 +77,13 @@
             </label>
           </p>
           <p>
-            <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
-            <label for="extra-molho">Molhos (+ R$ 7,00)</label>
-            <label for="molho">Tipo de molho:</label>
+            <label>
+              <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
+              Molhos (+ R$ 7,00)
+            </label>
+            <label for="tipo-cebola">
+              Tipo de molho:
+            </label>
             <select id="molho" name="molho">
               <option value="molho">Catupiry</option>
               <option value="molho">Cheddar</option>
@@ -101,8 +103,8 @@
             </label>
           </p>
           <p>
-            <input id="extra-cebola" name="extra[]" type="checkbox" value="adicional" />
             <label for="extra-cebola">
+              <input id="extra-cebola" name="extra[]" type="checkbox" value="adicional" />
               Cebolas (+ R$ 7,00)
             </label>
             <label for="tipo-cebola">
@@ -136,8 +138,8 @@
     </article>
     <nav aria-label="Navegação entre produtos">
       <ul class="paginacao-produtos">
-        <li><a href="burguer.html">Anterior</a></li>
-        <li><a href="costela.html">Próximo</a></li>
+        <li><a href="/pages/burguer.html"><h4>Anterior</h4></a></li>
+        <li><a href="/pages/costela.html"><h4>Próximo</h4></a></li>
       </ul>
     </nav>
   </main>

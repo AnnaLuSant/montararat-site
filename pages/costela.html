@@ -30,16 +30,14 @@
   </header>
   <main>
     <article>
-      <figure><img alt="hamburguer de costela" src="../../assets/img/costela.jpeg" width="200" />
-        <figcaption>Costela</figcaption>
-      </figure>
+      <figure><img alt="hamburguer de costela" src="../../assets/img/costela.jpeg" width="200" /></figure>
       <h1>Costela</h1>
-      <p>Pão australiano, alface americano, barbecue, hamburguer 180 gramas,<br /> cheddar fatiado, bacon, cebola
-        caramelizada, cebola emapanada </p>
+      <h5>Pão australiano, alface americano, barbecue, hamburguer 180 gramas,<br /> cheddar fatiado, bacon, cebola
+        caramelizada, cebola emapanada </h5><br>
       <section aria-labelledby="valores">
         <h2 id="valores">Valores</h2>
-        <p>Lanche - R$35,00 (Incluso só o lanche)</p>
-        <p>Combo - R$43,00 (Inclui uma porção de batatas e um refrigerante)</p>
+        <h5>Lanche - R$35,00 (Incluso só o lanche)</h5>
+        <h5>Combo - R$43,00 (Inclui uma porção de batatas e um refrigerante)</h5><br>
       </section>
       <section aria-labelledby="preferir">
         <fieldset>
@@ -49,13 +47,13 @@
       </section>
       <form action="/adicionar-ao-carrinho" method="POST">
         <fieldset>
-          <legend>Escolha os extras:</legend>
+         <legend>Escolha os extras:</legend>
           <p>
             <label>
               <input name="extra[]" type="checkbox" value="bacon" />
               burguer (+ R$ 10,00)
             </label>
-            <select id="type" name="burguer">
+            <select id="burguer" name="burguer">
               <option value="burguer">Burguer Bovino</option>
               <option value="burguer">Burguer de Frango</option>
               <option value="burguer">Burguer de Linguiça</option>
@@ -80,17 +78,17 @@
             </label>
           </p>
           <p>
-            <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
-            <label for="extra-molho">
+            <label>
+              <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
               Molhos (+ R$ 7,00)
             </label>
-            <label for="tipo-molho">
+            <label for="tipo-cebola">
               Tipo de molho:
             </label>
-            <select id="tipo-molho" name="molho">
-              <option value="catupiry">Catupiry</option>
-              <option value="cheddar">Cheddar</option>
-              <option value="cream-cheese">Cream Cheese</option>
+            <select id="molho" name="molho">
+              <option value="molho">Catupiry</option>
+              <option value="molho">Cheddar</option>
+              <option value="molho">Cream Cheese</option>
             </select>
           </p>
           <p>
@@ -106,8 +104,8 @@
             </label>
           </p>
           <p>
-            <input id="extra-cebola" name="extra[]" type="checkbox" value="adicional" />
             <label for="extra-cebola">
+              <input id="extra-cebola" name="extra[]" type="checkbox" value="adicional" />
               Cebolas (+ R$ 7,00)
             </label>
             <label for="tipo-cebola">
@@ -135,15 +133,14 @@
               <input name="extra[]" type="checkbox" value="adicional" />
               Pulled Porck (+ R$ 10,00)
             </label>
-          </p>
-          <hr /><button type="submit">Adicionar ao Carrinho</button>
+          </p><br /><button type="submit">Adicionar ao Carrinho</button>
         </fieldset>
       </form>
     </article>
     <nav aria-label="Navegação entre produtos">
       <ul class="paginacao-produtos">
-        <li><a href="cheddar.html">Anterior</a></li>
-        <li><a href="frango.html">Próximo</a></li>
+        <li><a href="/pages/cheddar.html"><h4>Anterior</h4></a></li>
+        <li><a href="/pages/frango.html"><h4>Próximo</h4></a></li>
       </ul>
     </nav>
   </main>
