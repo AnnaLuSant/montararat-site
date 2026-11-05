@@ -2,127 +2,175 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Salmão</title>
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Salmão</title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <!--Fontes do site-->
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <a href="../../index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
-                    width="100" /></a>
-        </div>
-        <nav aria-label="Navegação principal" class="main-nav">
-            <ul>
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="../sobrenos.html">Sobre</a></li>
-                <li><a href="../carrinho.html">Carrinho</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-                <li><a href="../avaliacoes.html">Avaliações</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <figure><img alt="Hambúrguer de salmão" src="../../assets/img/salmao.jpeg" width="200" />
-                <figcaption>Salmão</figcaption>
-            </figure>
-            <h1>Salmão</h1>
-            <h5>Pão australiano, cream chesse, rúcula, hamburguer de salmão 150 gramas, cebolinha</h5>
-            <section aria-labelledby="valores">
-                <h2 id="valores">Valores</h2>
-                <h5>Lanche - R$40,00 (Incluso só o lanche)</h5>
-                <h5>Combo - R$48,00 (Inclui uma porção de batatas e um refrigerante)</h5>
-            </section>
-            <section aria-labelledby="preferir">
-                <fieldset>
-                    <legend>O que vai preferir:</legend><label><input checked="" name="valor" type="radio"
-                            value="Lanche" /> Lanche</label><label><input name="valor" type="radio" value="Combo" />
-                        Combo</label>
-                </fieldset>
-            </section>
-            <form action="/adicionar-ao-carrinho" method="POST">
-                <fieldset>
-                    <legend>Escolha os extras:</legend>
-                    <p>
-                        <input id="extra-burguer" name="extra[]" type="checkbox" value="bacon" />
-                        <label for="extra-burguer">burguer (+ R$ 10,00)</label>
-                        <select id="type" name="burguer">
-                            <option value="burguer">Burguer Bovino</option>
-                            <option value="burguer">Burguer de Frango</option>
-                            <option value="burguer">Burguer de Linguiça</option>
-                        </select>
-                    </p>
-                    <p>
-                        <input id="extra-queijo" name="extra[]" type="checkbox" value="queijo" />
-                        <label for="extra-queijo">Queijo Coalho (+ R$ 14,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-salmao" name="extra[]" type="checkbox" value="hamburguer" />
-                        <label for="extra-salmao">Salmão (+ R$ 16,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-bacon" name="extra[]" type="checkbox" value="bacon" />
-                        <label for="extra-bacon">Bacon (+ R$ 7,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-molho" name="extra[]" type="checkbox" value="molho" />
-                        <label for="extra-molho">Molhos (+ R$ 7,00)</label>
-                        <label for="molho-tipo">Tipo de molho:</label>
-                        <select id="molho-tipo" name="extra[]">
-                            <option value="catupiry">Catupiry</option>
-                            <option value="cheddar">Cheddar</option>
-                            <option value="cream-cheese">Cream Cheese</option>
-                        </select>
-                    </p>
-                    <p>
-                        <input id="extra-mussarela" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-mussarela">Mussarela (+ R$ 7,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-cheddar" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-cheddar">Cheddar Fatiado (+ R$ 7,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-cebolas" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-cebolas">Cebolas (+ R$ 7,00)</label>
-                        <select id="cebola-tipo" name="extra[]">
-                            <option value="empanada">Empanada</option>
-                            <option value="caramelizada">Caramelizada</option>
-                        </select>
-                    </p>
-                    <p>
-                        <input id="extra-jalapeno" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-jalapeno">Pimenta Jalapeño(+ R$ 5,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-picles" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-picles">Picles (+ R$ 5,00)</label>
-                    </p>
-                    <p>
-                        <input id="extra-pulled-pork" name="extra[]" type="checkbox" value="adicional" />
-                        <label for="extra-pulled-pork">Pulled Porck (+ R$ 10,00)</label>
-                    </p>
-                    <hr /><button type="submit">Adicionar ao Carrinho</button>
-                </fieldset>
-            </form>
-        </article>
-        <nav aria-label="Navegação entre produtos">
-            <ul class="paginacao-produtos">
-                <li><a href="/pages/linguica.html">Anterior</a></li>
-                <li><a href="/pages/vegetariano.html">Próximo</a></li>
-            </ul>
-        </nav>
-    </main>
-    <footer class="site-footer">
-        <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
-    </footer>
+  <header class="site-header">
+    <div class="logo">
+      <a href="../index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
+          width="100"></a>
+    </div>
+    <nav aria-label="Navegação principal" class="main-nav">
+      <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/pages/sobrenos.html">Sobre</a></li>
+        <li><a href="/pages/carrinho.html">Carrinho</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <figure><img alt="Hambúrguer de salmão" src="../../assets/img/salmao.jpeg" width="200">
+        <figcaption>Salmão</figcaption>
+      </figure>
+      <h1>Salmão</h1>
+      <p>Pão australiano, cream chesse, rúcula, hamburguer de salmão 150 gramas, cebolinha</p><br>
+      <section aria-labelledby="valores">
+        <h2 id="valores">Valores</h2>
+        <h3>Lanche - R$40,00 (Incluso só o lanche)</h3>
+        <h3>Combo - R$48,00 (Inclui uma porção de batatas e um refrigerante)</h3><br>
+      </section>
+      <div>
+        <h2 id="preferir">Monte seu lanche</h2>
+        <fieldset>
+          <legend>Escolha sua opção:</legend>
+          <label><input checked="" name="valor" type="radio" value="Lanche" form="form-pedido">
+            Lanche</label>
+          <label><input name="valor" type="radio" value="Combo" form="form-pedido"> Combo</label>
+        </fieldset>
+      </div>
+      <form id="form-pedido" action="/adicionar-ao-carrinho" method="POST">
+        <fieldset>
+          <legend>Escolha o refrigerante:</legend>
+          <p>
+            <label for="refrigerante">Refrigerante:</label>
+            <select id="refrigerante" name="refrigerante" disabled>
+              <option value="nenhum">Sem refrigerante</option>
+              <option value="coca-cola">Coca-Cola</option>
+              <option value="guarana">Guaraná</option>
+              <option value="fanta">Fanta Laranja</option>
+              <option value="sprite">Sprite</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Escolha os extras:</legend>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="bacon">
+              burguer (+ R$ 10,00)
+            </label>
+            <select id="burguer" name="burguer">
+              <option value="burguer">Burguer Bovino</option>
+              <option value="burguer">Burguer de Frango</option>
+              <option value="burguer">Burguer de Linguiça</option>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="queijo">
+              Queijo Coalho (+ R$ 14,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="hamburguer">
+              Salmão (+ R$ 16,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="bacon">
+              Bacon (+ R$ 7,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="extra-molho" name="extra[]" type="checkbox" value="molho">
+              Molhos (+ R$ 7,00)
+            </label>
+            <label for="molho">
+              Tipo de molho:
+            </label>
+            <select id="molho" name="molho">
+              <option value="catupiry">Catupiry</option>
+              <option value="cheddar">Cheddar</option>
+              <option value="cream-cheese">Cream Cheese</option>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="adicional">
+              Mussarela (+ R$ 7,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="adicional">
+              Cheddar Fatiado (+ R$ 7,00)
+            </label>
+          </p>
+          <p>
+            <label for="extra-cebola">
+              <input id="extra-cebola" name="extra[]" type="checkbox" value="adicional">
+              Cebolas (+ R$ 7,00)
+            </label>
+            <label for="tipo-cebola">
+              Tipo de cebola:
+            </label>
+            <select id="tipo-cebola" name="tipo-cebola">
+              <option value="empanada">Empanada</option>
+              <option value="caramelizada">Caramelizada</option>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="adicional">
+              Pimenta Jalapeño(+ R$ 5,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="adicional">
+              Picles (+ R$ 5,00)
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="adicional">
+              Pulled Porck (+ R$ 10,00)
+            </label>
+          </p>
+          <p>
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" placeholder="Digite aqui suas observações"></textarea>
+          </p><br><button type="submit">Adicionar ao Carrinho</button>
+        </fieldset>
+      </form>
+    </article>
+    <nav aria-label="Navegação entre produtos">
+      <ul class="paginacao-produtos">
+        <li><a href="/pages/linguica.html">Anterior</a></li>
+        <li><a href="/pages/vegetariano.html">Próximo</a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
+  </footer>
+
+  <script src="/JavaScript/refrigerante.js"></script>
+  <script src="/JavaScript/carrinho.js"></script>
 </body>
 
 </html>
