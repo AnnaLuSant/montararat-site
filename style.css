@@ -84,7 +84,7 @@ table {
 
 figure {
     text-align: center;
-    margin-left: auto
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -138,3 +138,23 @@ fieldset {             /* Adiciona linhas divisórias ao redor dos campos dos fo
     padding: 10px;
     margin-bottom: 20px;
 }
+
+textarea {              /* Adiciona um estilo para o campo de texto do formulário de contato */
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid var(--creme);
+    border-radius: 10px;
+    resize: vertical;   /* Permite redimensionar verticalmente */
+}
+
+/* Imagens com altura fixa: evitam que o carrossel mude de tamanho */
+.card-img-cardapio  { height: 260px;  width: 100%; object-fit: cover; }
+.card-img-sobremesa { height: 22rem;  width: 100%; object-fit: cover; }
+
+/* Vídeo responsivo */
+.video { max-width: 100%; height: auto; }
+
+/* Setas laterais sem cobrir os cards */
+.carousel-control-prev,
+.carousel-control-next { width: 5%; }
