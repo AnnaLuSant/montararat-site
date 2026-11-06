@@ -2,11 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Doces</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
     <!--Fontes do site-->
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,8 +15,7 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
-                    width="100" /></a>
+            <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="/assets/img/logo.jpeg" width="100"></a>
         </div>
         <nav aria-label="Navegação principal" class="main-nav">
             <ul>
@@ -25,45 +24,42 @@
                 <li><a href="/pages/carrinho.html">Carrinho</a></li>
                 <li><a href="/pages/contato.html">Contato</a></li>
                 <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+                <li><a href="/pages/locais.html">Locais</a></li>
+                <li><a href="/pages/ajuda.html">Ajuda</a></li>
             </ul>
         </nav>
     </header>
 <main>
     <article>
-        <h1>Doces da Casa</h1>
+        <h1>Monte o seu Trudel</h1>
 
         <section aria-labelledby="trudel">
-            <h2 id="trudel">Trudel da Casa</h2>
-            <p>Massa de pão com açúcar e canela, recheada com Nutella, sorvete e morango.</p>
+            <h2 id="trudel">A Escolha da Casa</h2>
+            <p>Massa crocante com açúcar e canela, recheada com Nutella, sorvete e morango (ou banana).</p>
+            <figure><img src="/assets/img/aqlla.png" alt="Trudel da Casa com Nutella, sorvete e morango" class="img-fluid" width="400" height="400"></figure>
 
             <form action="/adicionar-ao-carrinho" method="POST">
                 <fieldset>
-                    <legend>Monte o seu doce</legend>
+                    <legend>Personalize do seu jeito</legend>
 
                     <fieldset>
-                        <legend>Escolha a massa</legend>
+                        <legend>Escolha seu recheio</legend>
                         <p>
                             <label>
-                                <input type="radio" name="massa" value="tradicional" required />
-                                Massa Tradicional
+                                <input type="radio" name="massa" value="nutella">
+                                Recheio de Nutella
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="radio" name="massa" value="nutella" />
-                                Massa de Nutella
+                                <input type="radio" name="massa" value="doce-de-leite">
+                                Recheio de Doce de Leite
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="radio" name="massa" value="doce-de-leite" />
-                                Massa de Doce de Leite
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="massa" value="ovomaltine" />
-                                Massa de Ovomaltine
+                                <input type="radio" name="massa" value="ovomaltine">
+                                Recheio de Ovomaltine
                             </label>
                         </p>
                     </fieldset>
@@ -72,7 +68,7 @@
                         <legend>Sorvete</legend>
                         <p>
                             <label>
-                                <input type="checkbox" name="sorvete" value="creme" />
+                                <input type="checkbox" name="sorvete" value="creme">
                                 Sorvete de Creme
                             </label>
                         </p>
@@ -82,47 +78,19 @@
                         <legend>Frutas</legend>
                         <p>
                             <label>
-                                <input type="checkbox" name="frutas" value="morango" />
+                                <input type="checkbox" name="frutas" value="morango">
                                 Morango
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="frutas" value="banana" />
+                                <input type="checkbox" name="frutas" value="banana">
                                 Banana
                             </label>
                         </p>
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Milk-Shake (opcional)</legend>
-                        <p>
-                            <label>
-                                <input type="radio" name="milkshake" value="nenhum" checked />
-                                Sem milk-shake
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="milkshake" value="nutella" />
-                                Milk-Shake de Nutella
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="milkshake" value="ovomaltine" />
-                                Milk-Shake de Ovomaltine
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="milkshake" value="frutas-vermelhas" />
-                                Milk-Shake de Frutas Vermelhas
-                            </label>
-                        </p>
-                    </fieldset>
-
-                    <button type="submit">Adicionar ao Carrinho</button>
+                    <a href="/pages/carrinho.html" class="btn btn-primary">Adicionar ao Carrinho</a>
                 </fieldset>
             </form>
         </section>
@@ -136,8 +104,8 @@
                 <iframe
                     title="Localização da Mont Ararat Hamburgueria no Google Maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
-                    width="400"
-                    height="250"
+                    width="700"
+                    height="350"
                     style="border:0;"
                     allowfullscreen
                     loading="lazy"
@@ -145,20 +113,18 @@
                 </iframe>
             </div>
             <div class="col-6">
-                <address>
                     <h2>Contato</h2>
                     <p>
-                        <strong>Endereço:</strong><br />
-                        R. Vercínio Pereira de Souza, 1199<br />
+                        <strong>Endereço:</strong><br>
+                        R. Vercínio Pereira de Souza, 1199<br>
                         São Mateus, São Paulo - SP, 03945-000
                     </p>
-                </address>
             </div>
         </div>
     </div>
-</footer>
+
         <p>&copy; 2026, Mont Ararat Hamburgueria.</p>
-    </footer>
+</footer>
 </body>
 
 </html>
