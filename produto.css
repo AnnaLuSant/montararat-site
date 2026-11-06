@@ -256,3 +256,10 @@
       min-height: 220px
    }
 }
+/* Harmonização dos produtos antigos com o layout atual */
+.produto-configuracao .produto-grupo { margin-bottom:18px; }
+.produto-configuracao .produto-grupo legend { color:var(--pretoCarvao); font-weight:600; }
+.produto-configuracao .produto-grupo p,.produto-configuracao label { color:var(--pretoCarvao) !important; }
+.produto-configuracao .produto-opcoes-titulo { color:var(--pretoCarvao) !important; text-align:left; }
+.produto-destaque .produto-precos h2 { color:var(--cinzaQuente) !important; }
+.produto-destaque .produto-precos h3 { color:var(--creme) !important; }
