@@ -44,8 +44,6 @@ nav ul {
 
 nav ul li a img {
     position: absolute;
-    top: 10;
-    /* Cola no topo */
     right: 0;
     margin-right: 10px;
 }
