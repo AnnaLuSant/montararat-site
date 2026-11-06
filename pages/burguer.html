@@ -2,25 +2,27 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta charset="utf-8" >
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" >
   <title>Burguer</title>
-  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="logo">
       <a href="../../index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
-          width="100" /></a>
+          width="100"></a>
     </div>
     <nav aria-label="Navegação principal" class="main-nav">
       <ul>
         <li><a href="../../index.html">Início</a></li>
-        <li><a href="../sobrenos.html">Sobre</a></li>
-        <li><a href="../carrinho.html">Carrinho</a></li>
-        <li><a href="../contato.html">Contato</a></li>
-        <li><a href="../avaliacoes.html">Avaliações</a></li>
+        <li><a href="/pages/sobrenos.html">Sobre</a></li>
+        <li><a href="/pages/carrinho.html"><img src="/assets/img/carrinh-b.png" alt="Carrinho"></a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+        <li><a href="/pages/pedidos.html">Pedidos</a></li>
+        <li><a href="/pages/favoritos.html">Favoritos</a></li>
+        <li><a href="/pages/maisvendidos.html">Mais Vendidos</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +32,7 @@
         <figcaption>Burguer</figcaption>
       </figure>
       <h1>Burguer</h1>
-      <p>Pão ciabata, alface americano, cebola roxa, maionese da casa.tomate,<br />picles, hamburguer 180 gramas,
+      <p>Pão ciabata, alface americano, cebola roxa, maionese da casa.tomate,<br>picles, hamburguer 180 gramas,
         mussarela,
         bacon, catupiry</p>
       <section aria-labelledby="valores">
@@ -40,8 +42,8 @@
       </section>
       <section aria-labelledby="preferir">
         <fieldset>
-          <legend>O que vai preferir:</legend><label><input checked="" name="valor" type="radio" value="Lanche" />
-            Lanche</label><label><input name="valor" type="radio" value="Combo" /> Combo</label>
+          <legend>O que vai preferir:</legend><label><input checked="" name="valor" type="radio" value="Lanche">
+            Lanche</label><label><input name="valor" type="radio" value="Combo"> Combo</label>
         </fieldset>
       </section>
       <form action="/adicionar-ao-carrinho" method="POST">
@@ -49,7 +51,7 @@
           <legend>Escolha os extras:</legend>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="bacon" />
+              <input name="extra[]" type="checkbox" value="bacon">
               burguer (+ R$ 10,00)
             </label>
             <select id="type" name="burguer">
@@ -60,25 +62,25 @@
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="queijo" />
+              <input name="extra[]" type="checkbox" value="queijo">
               Queijo Coalho (+ R$ 14,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="hamburguer" />
+              <input name="extra[]" type="checkbox" value="hamburguer">
               Salmão (+ R$ 16,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="bacon" />
+              <input name="extra[]" type="checkbox" value="bacon">
               Bacon (+ R$ 7,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="molho" />
+              <input name="extra[]" type="checkbox" value="molho">
               Molhos (+ R$ 7,00)
             </label>
             <select id="molho" name="extra[]">
@@ -89,19 +91,19 @@
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Mussarela (+ R$ 7,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Cheddar Fatiado (+ R$ 7,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Cebolas (+ R$ 7,00)
             </label>
             <select id="cebola" name="extra[]">
@@ -111,29 +113,29 @@
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Pimenta Jalapeño(+ R$ 5,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Picles (+ R$ 5,00)
             </label>
           </p>
           <p>
             <label>
-              <input name="extra[]" type="checkbox" value="adicional" />
+              <input name="extra[]" type="checkbox" value="adicional">
               Pulled Porck (+ R$ 10,00)
             </label>
           </p>
-          <hr /><button type="submit">Adicionar ao Carrinho</button>
+          <hr><button type="submit">Adicionar ao Carrinho</button>
         </fieldset>
       </form>
     </article>
     <nav aria-label="Navegação entre produtos">
       <ul class="paginacao-produtos">
-        <li><a href="cheddar.html"><br />Próximo</a></li>
+        <li><a href="cheddar.html"><br>Próximo</a></li>
       </ul>
     </nav>
   </main>
