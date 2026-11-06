@@ -14,218 +14,246 @@
 
 <body>
   <header class="site-header">
+
+    <!-- LOGO -->
     <div class="logo">
-      <a href="index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="assets/img/logo.jpeg"
-          width="100" /></a>
+      <a href="index.html">
+        <img src="/assets/img/logo.jpeg" alt="Logo da Mont Ararat Hamburgueria" width="100" height="100">
+      </a>
     </div>
+
+    <!-- NAVEGAÇÃO -->
     <nav aria-label="Navegação principal" class="main-nav">
-      <ul>
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/pages/sobrenos.html">Sobre</a></li>
-        <li><a href="/pages/carrinho.html">Carrinho</a></li>
-        <li><a href="/pages/contato.html">Contato</a></li>
-        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            Início
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/sobrenos.html">
+            Sobre
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contato.html">
+            Contato
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/avaliacoes.html">
+            Avaliações
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/carrinho.html">
+            <img src="/assets/img/carrinho.png" alt="Carrinho de compras">
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
- <body class="d-flex flex-column min-vh-100">
-  <main class="flex-grow-1">
-    <section class="hero">
-      <h1>Mont Ararat Hamburgueria</h1>
-      <h2>Embarque nessa montanha de sabores!</h2>
-      <p>Aqui você encontra os melhores hambúrgueres da região.</p>
-    </section>
 
-    <section class="video-destaque">
-      <figure>
-        <video class="video" controls loop muted playsinline preload="metadata"
-          poster="assets/img/capa_vid.png" width="640">
-          <source src="assets/vid/video.mp4" type="video/mp4" />
-        </video>
-      </figure>
-    </section>
+  <body class="d-flex flex-column min-vh-100">
+    <main class="flex-grow-1">
+      <section class="hero">
+        <h1>Mont Ararat Hamburgueria</h1>
+        <h2>Embarque nessa montanha de sabores!</h2>
+        <p>Aqui você encontra os melhores hambúrgueres da região.</p>
+      </section>
 
-    <!-- CARDÁPIO -->
-    <section class="cardapio">
-      <h2 class="text-center">Cardápio</h2>
+      <section class="video-destaque">
+        <figure>
+          <video class="video" controls loop muted playsinline preload="metadata" poster="assets/img/capa_vid.png"
+            width="640">
+            <source src="assets/vid/video.mp4" type="video/mp4" />
+          </video>
+        </figure>
+      </section>
 
-      <div id="carouselCardapio" class="carousel slide carousel-dark" aria-label="Cardápio">
-        <div class="carousel-inner">
+      <!-- CARDÁPIO -->
+      <section class="cardapio">
+        <h2 class="text-center">Cardápio</h2>
 
-          <!-- SLIDE 1 -->
-          <div class="carousel-item active">
-            <div class="container py-4">
-              <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/burguer2.jpeg" alt="Lanche burguer" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Burguer</h3>
-                      <a href="/pages/burguer.html" class="btn btn-outline-secondary">Ver Mais</a>
+        <div id="carouselCardapio" class="carousel slide carousel-dark" aria-label="Cardápio">
+          <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/burguer2.jpeg" alt="Lanche burguer" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Burguer</h3>
+                        <a href="/pages/burguer.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/cheddar.jpeg" alt="Lanche cheddar" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Cheddar</h3>
-                      <a href="/pages/cheddar.html" class="btn btn-outline-secondary">Ver Mais</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/cheddar.jpeg" alt="Lanche cheddar" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Cheddar</h3>
+                        <a href="/pages/cheddar.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/costela.jpeg" alt="Lanche costela" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Costela</h3>
-                      <a href="/pages/costela.html" class="btn btn-outline-secondary">Ver Mais</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/costela.jpeg" alt="Lanche costela" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Costela</h3>
+                        <a href="/pages/costela.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- SLIDE 2 -->
-          <div class="carousel-item">
-            <div class="container py-4">
-              <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/frango.jpeg" alt="Lanche frango" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Frango</h3>
-                      <a href="/pages/frango.html" class="btn btn-outline-secondary">Ver Mais</a>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/frango.jpeg" alt="Lanche frango" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Frango</h3>
+                        <a href="/pages/frango.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/linguica.jpeg" alt="Lanche linguiça" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Linguiça</h3>
-                      <a href="/pages/linguica.html" class="btn btn-outline-secondary">Ver Mais</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/linguica.jpeg" alt="Lanche linguiça"
+                        class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Linguiça</h3>
+                        <a href="/pages/linguica.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/salmao.jpeg" alt="Lanche salmão" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Salmão</h3>
-                      <a href="/pages/salmao.html" class="btn btn-outline-secondary">Ver Mais</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/salmao.jpeg" alt="Lanche salmão" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Salmão</h3>
+                        <a href="/pages/salmao.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- SLIDE 3 -->
-          <div class="carousel-item">
-            <div class="container py-4">
-              <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/vegetariano.jpeg" alt="Lanche vegetariano" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Vegetariano</h3>
-                      <a href="/pages/vegetariano.html" class="btn btn-outline-secondary">Ver Mais</a>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/vegetariano.jpeg" alt="Lanche vegetariano"
+                        class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Vegetariano</h3>
+                        <a href="/pages/vegetariano.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/porcoes.png" alt="Porções" class="card-img-top card-img-cardapio" />
-                    <div class="card-body">
-                      <h3 class="card-title">Porções</h3>
-                      <a href="/pages/porcoes.html" class="btn btn-outline-secondary">Ver Mais</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="assets/img/porcoes.png" alt="Porções" class="card-img-top card-img-cardapio" />
+                      <div class="card-body">
+                        <h3 class="card-title">Porções</h3>
+                        <a href="/pages/porcoes.html" class="btn btn-outline-secondary">Ver Mais</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
 
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCardapio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCardapio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
+      </section>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCardapio" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCardapio" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
+      <!-- SOBREMESAS -->
+      <section class="sobremesas mt-5">
+        <h2 class="text-center">Sobremesas</h2>
+
+        <div class="container py-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/aqlla.png" alt="Trudel da Casa" class="card-img-top card-img-sobremesa" />
+                <div class="card-body">
+                  <h3 class="card-title">Trudel da Casa</h3>
+                  <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/milkshakeChoco.png" alt="Milk-Shake de Nutella"
+                  class="card-img-top card-img-sobremesa" />
+                <div class="card-body">
+                  <h3 class="card-title">Milk-Shake de Nutella</h3>
+                  <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/milkshake.png" alt="Milk-Shake de Frutas Vermelhas"
+                  class="card-img-top card-img-sobremesa" />
+                <div class="card-body">
+                  <h3 class="card-title">Milk-Shake de Frutas Vermelhas</h3>
+                  <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <iframe title="Localização da Mont Ararat Hamburgueria no Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
+              width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <div class="col-12 col-md-6">
+            <address>
+              <h2>Contato</h2>
+              <p>
+                <strong>Endereço:</strong><br />
+                R. Vercínio Pereira de Souza, 1199<br />
+                São Mateus, São Paulo - SP, 03945-000
+              </p>
+            </address>
+          </div>
+        </div>
       </div>
-    </section>
+      <p class="text-center">&copy; 2026, Mont Ararat Hamburgueria.</p>
+    </footer>
 
-        <!-- SOBREMESAS -->
-    <section class="sobremesas mt-5">
-      <h2 class="text-center">Sobremesas</h2>
+    <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
-      <div class="container py-4">
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center">
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/aqlla.png" alt="Trudel da Casa" class="card-img-top card-img-sobremesa" />
-              <div class="card-body">
-                <h3 class="card-title">Trudel da Casa</h3>
-                <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/milkshakeChoco.png" alt="Milk-Shake de Nutella" class="card-img-top card-img-sobremesa" />
-              <div class="card-body">
-                <h3 class="card-title">Milk-Shake de Nutella</h3>
-                <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/img/milkshake.png" alt="Milk-Shake de Frutas Vermelhas" class="card-img-top card-img-sobremesa" />
-              <div class="card-body">
-                <h3 class="card-title">Milk-Shake de Frutas Vermelhas</h3>
-                <a href="/pages/doces.html" class="btn btn-outline-secondary">Ver Mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer mt-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6">
-          <iframe
-            title="Localização da Mont Ararat Hamburgueria no Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
-            width="100%" height="250" style="border:0;"
-            allowfullscreen loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <div class="col-12 col-md-6">
-          <address>
-            <h2>Contato</h2>
-            <p>
-              <strong>Endereço:</strong><br />
-              R. Vercínio Pereira de Souza, 1199<br />
-              São Mateus, São Paulo - SP, 03945-000
-            </p>
-          </address>
-        </div>
-      </div>
-    </div>
-    <p class="text-center">&copy; 2026, Mont Ararat Hamburgueria.</p>
-  </footer>
-
-  <script crossorigin="anonymous"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 </html>

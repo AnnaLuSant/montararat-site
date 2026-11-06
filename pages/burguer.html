@@ -16,34 +16,40 @@
 <body>
   <header class="site-header">
     <div class="logo">
-      <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg" width="100"></a>
+      <a href="index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="/assets/img/logo.jpeg"
+          width="100" /></a>
     </div>
     <nav aria-label="Navegação principal" class="main-nav">
       <ul>
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/pages/sobrenos.html">Sobre</a></li>
-        <li><a href="/pages/carrinho.html">Carrinho</a></li>
-        <li><a href="/pages/contato.html">Contato</a></li>
-        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="avaliacoes.html">Avaliações</a></li>
+        <li><a href="carrinho.html"><img src="/assets/img/carrinho.png" alt=""></a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <article>
+    <article class="produto-layout">
       <div class="produto-destaque">
-        <figure><img alt="Hambúrguer da Mont Ararat" src="../../assets/img/burguer2.jpeg" width="200"></figure>
-        <h1>Burguer</h1>
-        <p>Pão ciabata, alface americano, cebola roxa, maionese da casa.tomate, picles, hamburguer 180 gramas,
+        <figure class="produto-foto"><img alt="Hambúrguer da Mont Ararat" src="../../assets/img/burguer2.jpeg" width="200"></figure>
+        <h1 class="produto-titulo">Burguer</h1>
+        <p class="produto-descricao">Pão ciabata, alface americano, cebola roxa, maionese da casa.tomate, picles, hamburguer 180 gramas,
           mussarela, bacon, catupiry</p><br>
         <section aria-labelledby="valores">
-          <h2 id="valores">Valores</h2>
+          <h2 id="valores" class="produto-precos">Valores</h2>
           <h3>Lanche individual - R$35,00</h3>
           <h3>Combo - R$43,00 (Inclui uma porção de batatas e um refrigerante)</h3><br>
         </section>
       </div>
+
+      <!-- DIREITA DO MAIN -->
       <div class="produto-configuracao">
+
         <div class="produto-opcoes">
           <h2 id="preferir">Monte seu lanche</h2>
+
            <fieldset class="produto-grupo">
             <legend>Escolha sua opção:</legend>
             <label><input checked="" name="valor" type="radio" value="Lanche" form="form-pedido">
@@ -66,7 +72,7 @@
               </select>
             </p>
           </fieldset>
-          <fieldset>
+          <fieldset class="produto-grupo">
             <legend>Escolha os extras:</legend>
             <p class="produto-extra">
               <label>
@@ -148,13 +154,13 @@
                 Picles (+ R$ 5,00)
               </label>
             </p>
-            <p class="produto-extra>
+            <p class="produto-extra">
               <label>
                 <input name="extra[]" type="checkbox" value="adicional">
                 Pulled Porck (+ R$ 10,00)
               </label>
             </p>
-            <p class="produto-extra>
+            <p class="produto-extra">
               <label for="observacoes">Observações:</label>
               <textarea id="observacoes" name="observacoes" placeholder="Digite aqui suas observações"></textarea>
             </p><br><button type="submit" class="btn-principal">Adicionar ao Carrinho</button>

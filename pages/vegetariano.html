@@ -16,15 +16,16 @@
 <body>
   <header class="site-header">
     <div class="logo">
-      <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg" width="100"></a>
+      <a href="index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="/assets/img/logo.jpeg"
+          width="100" /></a>
     </div>
     <nav aria-label="Navegação principal" class="main-nav">
       <ul>
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/pages/sobrenos.html">Sobre</a></li>
-        <li><a href="/pages/carrinho.html">Carrinho</a></li>
-        <li><a href="/pages/contato.html">Contato</a></li>
-        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pages/sobrenos.html">Sobre</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+        <li><a href="pages/avaliacoes.html">Avaliações</a></li>
+        <li><a href="pages/carrinho.html"><img src="/assets/img/carrinho.png" alt=""></a></li>
       </ul>
     </nav>
   </header>
@@ -86,6 +87,20 @@
 
           <form id="form-pedido" class="produto-formulario" data-produto="Vegetariano" data-preco-lanche="39"
             data-preco-combo="43">
+            <fieldset class="produto-grupo">
+              <legend>Escolha o refrigerante:</legend>
+              <p class="produto-extra">
+                <label for="refrigerante">Refrigerante:</label>
+                <select id="refrigerante" name="refrigerante" disabled>
+                  <option value="nenhum">Sem refrigerante</option>
+                  <option value="coca-cola">Coca-Cola</option>
+                  <option value="guarana">Guaraná</option>
+                  <option value="fanta">Fanta Laranja</option>
+                  <option value="sprite">Sprite</option>
+                </select>
+              </p>
+            </fieldset>
+
             <fieldset class="produto-grupo">
               <legend>Escolha os extras:</legend>
 

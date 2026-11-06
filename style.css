@@ -40,6 +40,16 @@ nav ul {
     margin-left: 10px;
 }
 
+/*img carrinho*/
+
+nav ul li a img {
+    position: absolute;
+    top: 10;
+    /* Cola no topo */
+    right: 0;
+    margin-right: 10px;
+}
+
 nav ul li a {
     /*Remover o sublinhado do texto*/
     text-decoration: none;
@@ -505,6 +515,50 @@ textarea {
     outline-offset: 3px;
 }
 
+/*CONFIGURAÇÃO DO MENU*/
+
+/* NAVEGAÇÃO BOOTSTRAP */
+
+.main-nav .nav-tabs {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* LINKS */
+
+.main-nav .nav-link {
+    color: inherit;
+    background: transparent;
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+
+.main-nav .nav-link:hover {
+    color: #ff9800;
+    background: transparent;
+    border: none;
+}
+
+/* PÁGINA ATIVA */
+
+.main-nav .nav-link.active {
+    color: #ff9800;
+    background: transparent;
+    border: none;
+}
+
+/* ÍCONE CARRINHO */
+
+.main-nav .nav-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 576px) {
     .acoes-carrinho {
@@ -544,6 +598,7 @@ textarea {
 
 /* RESPONSIVIDADE BOTÃO */
 @media (max-width: 576px) {
+
     .btn-principal,
     .btn-secundario {
         padding: 10px 18px;
