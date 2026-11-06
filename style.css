@@ -13,13 +13,13 @@ header {
     background-color: var(--pretoCarvao);
     display: flex;
     gap: 10px;
-    
+
 }
 
 body {
     background: linear-gradient(45deg, var(--pretoCarvao), var(--marromCarvao));
     font-family: "Oswald", sans-serif;
-    
+
 }
 
 
@@ -30,7 +30,7 @@ nav ul {
     list-style: none;
     text-align: center;
     padding-top: 37px;
-    
+
 }
 
 .logo img {
@@ -47,28 +47,32 @@ nav ul li a {
 
 }
 
-main h1{
+main h1 {
     margin-top: 20px;
     color: var(--creme);
     text-align: center;
 }
 
-main h1, h2, h3, h4, h5{
+main h1,
+h2,
+h3,
+h4,
+h5 {
     color: var(--creme);
     text-align: center;
 }
 
-video{
-    display: block;      /* Transforma o vídeo em elemento de bloco */
-    margin: 0 auto;      /* Centraliza horizontalmente (topo/fundo 0, esquerda/direita auto) */
-    width: 60%; 
+video {
+    display: block;
+    /* Transforma o vídeo em elemento de bloco */
+    margin: 0 auto;
+    /* Centraliza horizontalmente (topo/fundo 0, esquerda/direita auto) */
+    width: 60%;
 }
 
 p {
     text-align: center;
     color: var(--creme)
-    
-
 }
 
 figcaption {
@@ -98,6 +102,111 @@ button {
     margin-right: auto;
 }
 
+/* BOTÕES PRINCIPAIS */
+.btn-principal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 25px;
+    min-height: 48px;
+
+    background-color: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+
+    border: 2px solid var(--amareloMostarda);
+    border-radius: 8px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover:not(:disabled) {
+    background-color: var(--amareloClaro);
+    border-color: var(--amareloClaro);
+    color: var(--pretoCarvao);
+    transform: translateY(-3px);
+}
+
+/* BOTÕES SECUNDÁRIOS */
+.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 25px;
+    min-height: 48px;
+
+    background-color: var(--marromCarvao);
+    color: var(--amareloClaro);
+
+    border: 2px solid var(--amareloMostarda);
+    border-radius: 8px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-secundario:hover:not(:disabled) {
+    background-color: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+    transform: translateY(-3px);
+}
+
+/* CLIQUE */
+.btn-principal:active:not(:disabled),
+.btn-secundario:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+/* ACESSIBILIDADE */
+.btn-principal:focus-visible,
+.btn-secundario:focus-visible {
+    outline: 3px solid var(--amareloClaro);
+    outline-offset: 3px;
+}
+
+/* DESABILITADOS */
+.btn-principal:disabled,
+.btn-secundario:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* NAVEGAÇÃO ENTRE PRODUTOS */
+.paginacao-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.paginacao-produtos li {
+    margin: 0;
+}
+
+
 form p {
     color: var(--creme);
     text-align: left;
@@ -119,42 +228,325 @@ fieldset {
     margin-right: auto;
 }
 
-label {                  /* Adiciona um estilo para os elementos <label> */
+label {
+    /* Adiciona um estilo para os elementos <label> */
     color: var(--creme);
     text-align: left;
     margin-left: 20px;
     margin-right: auto;
 }
 
-li {                    /* Adiciona um estilo para o "próximo" e "anterior" das páginas dos lanches  */
-    color: var(--creme); 
+li {
+    /* Adiciona um estilo para o "próximo" e "anterior" das páginas dos lanches  */
+    color: var(--creme);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-fieldset {             /* Adiciona linhas divisórias ao redor dos campos dos formulários dos lanches*/
+fieldset {
+    /* Adiciona linhas divisórias ao redor dos campos dos formulários dos lanches*/
     border: 1px solid var(--creme);
     padding: 10px;
     margin-bottom: 20px;
 }
 
-textarea {              /* Adiciona um estilo para o campo de texto do formulário de contato */
+textarea {
+    /* Adiciona um estilo para o campo de texto do formulário de contato */
     width: 100%;
     height: 200px;
     padding: 10px;
     border: 1px solid var(--creme);
     border-radius: 10px;
-    resize: vertical;   /* Permite redimensionar verticalmente */
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
 }
 
 /* Imagens com altura fixa: evitam que o carrossel mude de tamanho */
-.card-img-cardapio  { height: 260px;  width: 100%; object-fit: cover; }
-.card-img-sobremesa { height: 22rem;  width: 100%; object-fit: cover; }
+.card-img-cardapio {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-img-sobremesa {
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* Vídeo responsivo */
-.video { max-width: 100%; height: auto; }
+.video {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Setas laterais sem cobrir os cards */
 .carousel-control-prev,
-.carousel-control-next { width: 5%; }
+.carousel-control-next {
+    width: 5%;
+}
+
+
+/* CONTROLE DE QUANTIDADE DO CARRINHO */
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+/* BOTÕES + E - */
+.btn-quantidade-mais,
+.btn-quantidade-menos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid #FF9F1C;
+    border-radius: 50%;
+
+    background-color: #252525;
+    color: #FF9F1C;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.btn-quantidade-menos:hover {
+    background-color: #FF9F1C;
+    color: #1C1C1C;
+    transform: scale(1.08);
+}
+
+.btn-quantidade-mais:hover {
+    background-color: #FF9F1C;
+    color: #1C1C1C;
+    transform: scale(1.08);
+}
+
+/* EFEITO AO CLICAR */
+.btn-quantidade-menos {
+    transform: scale(0.95);
+}
+
+.btn-quantidade-mais {
+    transform: scale(0.95);
+}
+
+/* ACESSIBILIDADE */
+.btn-quantidade-menos:focus-visible {
+    outline: 3px solid #FFD166;
+    outline-offset: 3px;
+}
+
+.btn-quantidade-mais:focus-visible {
+    outline: 3px solid #FFD166;
+    outline-offset: 3px;
+}
+
+/* CONTADOR CENTRAL */
+.quantidade-valor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 60px;
+
+    background-color: #303030;
+    border: 1px solid #555555;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* CENTRALIZAR CONTROLE DE QUANTIDADE */
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* CORRIGIR MARGENS DOS BOTÕES */
+.controle-quantidade .btn-quantidade-menos,
+.controle-quantidade .btn-quantidade-mais {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* CENTRALIZAR O CONTADOR */
+.controle-quantidade .quantidade-valor {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* ===================================
+   CARRINHO - CARDS DOS PRODUTOS
+=================================== */
+
+#lista-carrinho .card {
+    background-color: var(--creme);
+    border: 2px solid var(--amareloMostarda);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* TÍTULO DO PRODUTO */
+#lista-carrinho .card h3 {
+    color: var(--pretoCarvao);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+/* DESCRIÇÃO E PERSONALIZAÇÕES */
+#lista-carrinho .card p {
+    color: var(--marromCarvao);
+    font-size: 16px;
+}
+
+/* PREÇO DO PRODUTO */
+#lista-carrinho .card p:last-of-type {
+    color: var(--terracota);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===================================
+   BOTÕES DE NAVEGAÇÃO DO CARRINHO
+=================================== */
+
+.acoes-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* ESTILO COMPARTILHADO */
+.btn-continuar,
+.btn-pagamento {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 25px;
+    min-height: 48px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* CONTINUAR COMPRANDO */
+.btn-continuar {
+    background-color: var(--marromCarvao);
+    color: var(--amareloClaro);
+    border: 2px solid var(--amareloMostarda);
+}
+
+.btn-continuar:hover {
+    background-color: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+    transform: translateY(-3px);
+}
+
+/* IR PARA PAGAMENTO */
+.btn-pagamento {
+    background-color: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+    border: 2px solid var(--amareloMostarda);
+
+    margin: 0;
+}
+
+.btn-pagamento:hover:not(:disabled) {
+    background-color: var(--amareloClaro);
+    border-color: var(--amareloClaro);
+    color: var(--pretoCarvao);
+    transform: translateY(-3px);
+}
+
+/* BOTÃO DESABILITADO */
+.btn-pagamento:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ACESSIBILIDADE */
+.btn-continuar:focus-visible,
+.btn-pagamento:focus-visible {
+    outline: 3px solid var(--amareloClaro);
+    outline-offset: 3px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 576px) {
+    .acoes-carrinho {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-continuar,
+    .btn-pagamento {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 576px) {
+
+    .btn-quantidade-mais,
+    .btn-quantidade-menos {
+        width: 42px;
+        height: 42px;
+        font-size: 24px;
+    }
+
+    .quantidade-valor-mais,
+    .quantidade-valor-menos {
+        width: 75px;
+        height: 60px;
+    }
+
+    .btn-quantidade-menos {
+        align-items: center;
+    }
+}
+
+/* RESPONSIVIDADE BOTÃO */
+@media (max-width: 576px) {
+    .btn-principal,
+    .btn-secundario {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+}
