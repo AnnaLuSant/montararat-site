@@ -2,97 +2,145 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Porções</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Porções</title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <!--Fontes do site-->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  .imagens-porcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .imagens-porcoes figure {
+    margin: 0;
+    text-align: center;
+  }
+  fieldset {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+</style>
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
-                    width="100"></a>
-        </div>
-        <nav aria-label="Navegação principal" class="main-nav">
-            <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/pages/sobrenos.html">Sobre</a></li>
-                <li><a href="/pages/carrinho.html">Carrinho</a></li>
-                <li><a href="/pages/contato.html">Contato</a></li>
-                <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
-                <li><a href="/pages/locais.html">Locais</a></li>
-                <li><a href="/pages/ajuda.html">Ajuda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h1>Porções</h1>
+  <header class="site-header">
+    <div class="logo">
+      <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
+          width="100"></a>
+    </div>
+    <nav aria-label="Navegação principal" class="main-nav">
+      <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/pages/sobrenos.html">Sobre</a></li>
+        <li><a href="/pages/carrinho.html">Carrinho</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+        <li><a href="/pages/locais.html">Locais</a></li>
+        <li><a href="/pages/ajuda.html">Ajuda</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="imagens-porcoes">
+        <figure><img alt="Coxinhas" src="/assets/img/coxinha.jpeg" width="200"></figure>
+        <figure><img alt="Batata" src="/assets/img/porcoes.png" width="200"></figure>
+        <figure><img alt="Nuggets" src="/assets/img/nuggets.jpeg" width="200"></figure>
+      </div>
+      <h1>Porções</h1>
+      <p>Deliciosas porções para compartilhar ou saborear sozinho: Coxinhas tradicionais ou Pulled (3 ou 6 unidades)<br>
+      Nuggets crocantes (6 ou 10 unidades) e nossas irresistíveis Batatas (Média, Grande ou Batata Pulled).</p><br>
+      
+      <section aria-labelledby="valores">
+        <h2 id="valores">Valores e Opções</h2>
+      </section>
 
-            <div>
-                <h2 id="porcoes-batata">Porções disponíveis</h2>
-                <figure>
-                    <img alt="Coxinhas" height="220" src="/assets/img/coxinha.jpeg" width="200">
-                    <figcaption>Coxinha 3 | 6 unidades<br>Coxinha Pulled 3 | 6 unidades</figcaption>
-                </figure>
-                <figure>
-                    <img alt="Nuggets" height="220" src="../../assets/img/nuggets.jpeg" width="200">
-                    <figcaption>Nuggtes 6 | 10 unidades</figcaption>
-                </figure>
-                <figure>
-                    <img alt="Batatas" height="220" src="../../assets/img/batatas.jpeg" width="200">
-                    <figcaption>Batata Média<br>Batata Grande<br>Batata Pulled</figcaption>
-                </figure>
-            </div>
+      <form action="/adicionar-ao-carrinho" method="POST">
+        <fieldset>
+          <legend>Coxinha:</legend>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="coxinha">
+              Coxinha
+            </label>
+            <select name="coxinha_qtd">
+              <option value="3">3 unidades</option>
+              <option value="6">6 unidades</option>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="coxinha-pulled">
+              Coxinha Pulled
+            </label>
+            <select name="coxinha_pulled_qtd">
+              <option value="3">3 unidades</option>
+              <option value="6">6 unidades</option>
+            </select>
+          </p>
+        </fieldset>
 
-            <section aria-labelledby="adicionais-batata">
-                <h2 id="adicionais-batata">Adicionais Batata</h2>
-                <p>Bacon | Catupiry | Cheddar | Cream Cheese</p>
-            </section>
+        <fieldset>
+          <legend>Nugget:</legend>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="nugget">
+              Nuggets
+            </label>
+            <select name="nugget_qtd">
+              <option value="6">6 unidades</option>
+              <option value="10">10 unidades</option>
+            </select>
+          </p>
+        </fieldset>
 
-            <section aria-labelledby="extras-lanches">
-                <h2 id="extras-lanches">Extras nos lanches</h2>
-                <p>Burguer (Bovino | Frango | Linguiça)<br>
-                    Burguer (Queijo coalho) <br>
-                    Burguer (Salmão) <br>
-                    Bacon | Catupiry | Cheddar | Cream Cheese | Mussarela <br>
-                    Cebola Caramelizada ou empanada <br>
-                    Pimenta Jalapeño | Picles <br>
-                    Pulled Porck</p>
-            </section>
+        <fieldset>
+          <legend>Batata:</legend>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="batata-media">
+              Batata Média
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="batata-grande">
+              Batata Grande
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="extra[]" type="checkbox" value="batata-pulled">
+              Batata Pulled
+            </label>
+          </p>
+        </fieldset>
+        
+        <br><button type="submit">Adicionar ao Carrinho</button>
+      </form>
+    </article>
 
-            <section aria-labelledby="bebidas">
-                <h2 id="bebidas">Bebidas</h2>
-                <p><strong>Cervejas:</strong><br>
-                    Heineken <br>
-                    Eisenbahn</p>
-                <p><strong>Refrigerantes:</strong><br>
-                    Coca-Cola <br>
-                    Coca- Cola Zero <br>
-                    Fanta Laranja <br>
-                    Fanta Uva <br>
-                    Sprite <br>
-                    Sprite Zero</p>
-                <p><strong>Sucos:</strong><br>
-                    Del Valle Uva <br>
-                    Del Valle Maracujá <br>
-                    Del Valle Pêssego </p>
-                <p><strong>Pink Lemonade:</strong><br>
-                    Frutas Vermelhas com Limão <br>
-                    Maça Verde com Limão</p>
-            </section>
-        </article>
-
-        <nav aria-label="Navegação entre produtos">
-            <ul class="paginacao-produtos">
-                <li><a href="vegetariano.html">Anterior</a></li>
-                <li><a href="../../index.html">Voltar ao início</a></li>
-            </ul>
-        </nav>
-    </main>
-    <footer class="site-footer">
-        <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
-    </footer>
+    <nav aria-label="Navegação entre produtos">
+      <ul class="paginacao-produtos">
+        <li><a href="vegetariano.html">Anterior</a></li>
+        <li><a href="../../index.html">Voltar ao início</a></li>
+      </ul>
+    </nav>
+  </main>
+  
+  <footer class="site-footer">
+    <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
+  </footer>
+<script src="/JavaScript/refrigerante.js"></script> 
+<script src="/JavaScript/carrinho.js"></script>
 </body>
 
 </html>
