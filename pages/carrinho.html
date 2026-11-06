@@ -2,12 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Carrinho</title>
     <link rel="stylesheet" href="../style.css">
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
     <link rel="stylesheet" href="../../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -25,28 +24,34 @@
                 <li><a href="/pages/carrinho.html"><img src="/assets/img/carrinh-b.png" alt="Carrinho"></a></li>
                 <li><a href="/pages/contato.html">Contato</a></li>
                 <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+                <li><a href="/pages/pedidos.html">Pedidos</a></li>
+                <li><a href="/pages/favoritos.html">Favoritos</a></li>
+                <li><a href="/pages/maisvendidos.html">Mais Vendidos</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <body id="pages-carrinho">
+            
+        
         <h1>Carrinho</h1>
 
         <section aria-labelledby="seus-itens">
             <h2 id="seus-itens">Seus Itens:</h2>
             <ul class="itens-carrinho">
                 <li>
-                    <figure><img alt="Combo Costela" height="250" src="../assets/img/costela.jpeg" width="200" />
+                    <figure><img alt="Combo Costela" height="250" src="../assets/img/costela.jpeg" width="200">
                         <figcaption>Combo Costela</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <figure><img alt="Porção de Coxinha" height="250" src="../assets/img/coxinha.jpeg" width="200" />
+                    <figure><img alt="Porção de Coxinha" height="250" src="../assets/img/coxinha.jpeg" width="200">
                         <figcaption>Porção de Coxinha</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure><img alt="Milkshake de Nutella" height="250" src="../assets/img/milshake.jpeg"
-                            width="200" />
+                            width="200">
                         <figcaption>Milkshake de Nutella</figcaption>
                     </figure>
                 </li>
@@ -81,6 +86,7 @@
             </table>
             <button onclick="window.location.href='paga.html'" type="button">Ir para o pagamento</button>
         </section>
+        </body>
     </main>
     <footer class="site-footer">
         <p>&copy; 2026 Mont Ararat Hamburgueria.</p>

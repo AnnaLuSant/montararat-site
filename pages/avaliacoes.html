@@ -17,7 +17,7 @@
     <header class="site-header">
         <div class="logo">
             <a href="index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="/assets/img/logo.jpeg"
-                    width="100" /></a>
+                    width="100"></a>
         </div>
         <nav aria-label="Navegação principal" class="main-nav">
             <ul>
@@ -26,6 +26,9 @@
                 <li><a href="/pages/carrinho.html"><img src="/assets/img/carrinh-b.png" alt="Carrinho"></a></li>
                 <li><a href="/pages/contato.html">Contato</a></li>
                 <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+                <li><a href="/pages/pedidos.html">Pedidos</a></li>
+                <li><a href="/pages/favoritos.html">Favoritos</a></li>
+                <li><a href="/pages/maisvendidos.html">Mais Vendidos</a></li>
             </ul>
         </nav>
     </header>
@@ -36,39 +39,41 @@
         <form>
             <div class="row">
                 <div class="col-6">
-                    <h4 for="formGroupExampleInput" class="form-label">Nome</h4>
+                    <label for="formGroupExampleInput" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-6">
-                    <h4 for="formGroupExampleInput2" class="form-label">Dê sua opinião</h4>
+                    <label for="formGroupExampleInput2" class="form-label">Dê sua opinião</label>
                     <input type="text" class="form-control" id="formGroupExampleInput2"
-                        placeholder="Me de seua opiniao">
+                        placeholder="Me de sua opiniao">
                 </div>
             </div>
 
 
             <br><br>
 
-            <h5 for="estrelas">Sua nota:</h5>
-            <div class="avaliacao">
-                <input type="radio" id="estrela5" name="nota" value="5">
-                <label for="estrela5">★</label>
+            <fieldset>
+                <legend>Sua nota:</legend>
+                <div class="avaliacao">
+                    <input type="radio" id="estrela5" name="nota" value="5">
+                    <label for="estrela5">★</label>
 
-                <input type="radio" id="estrela4" name="nota" value="4">
-                <label for="estrela4">★</label>
+                    <input type="radio" id="estrela4" name="nota" value="4">
+                    <label for="estrela4">★</label>
 
-                <input type="radio" id="estrela3" name="nota" value="3">
-                <label for="estrela3">★</label>
+                    <input type="radio" id="estrela3" name="nota" value="3">
+                    <label for="estrela3">★</label>
 
-                <input type="radio" id="estrela2" name="nota" value="2">
-                <label for="estrela2">★</label>
+                    <input type="radio" id="estrela2" name="nota" value="2">
+                    <label for="estrela2">★</label>
 
-                <input type="radio" id="estrela1" name="nota" value="1">
-                <label for="estrela1">★</label>
-            </div>
+                    <input type="radio" id="estrela1" name="nota" value="1">
+                    <label for="estrela1">★</label>
+                </div>
+            </fieldset>
 
             <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog"
                 data-bs-target="#exampleDialog">
