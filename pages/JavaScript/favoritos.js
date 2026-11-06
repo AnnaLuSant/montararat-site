@@ -1,17 +1,19 @@
-
-var WHATSAPP = "5511999999999"; // troque pelo número da lanchonete (DDI + DDD + número)
+var WHATSAPP = "5511996188936"; 
 var ITEMS = [
-  {id:"burger", cat:"Lanches", name:"Burger", desc:"Hambúrguer, queijo, alface, tomate e molho da casa", price:2200, e:"🍔"},
-  {id:"xbacon", cat:"Lanches", name:"X-Bacon", desc:"Hambúrguer, queijo, bacon crocante e maionese", price:2600, e:"🥓"},
-  {id:"misto", cat:"Lanches", name:"Misto Quente", desc:"Presunto e queijo na chapa", price:1200, e:"🥪"},
-  {id:"batata", cat:"Porções", name:"Batata Frita", desc:"Porção grande, serve duas pessoas", price:2400, e:"🍟"},
-  {id:"pastel", cat:"Porções", name:"Pastel de Queijo", desc:"Massa fina, frito na hora", price:800, e:"🥟"},
-  {id:"laranja", cat:"Bebidas", name:"Suco de Laranja", desc:"Natural, 400 ml", price:900, e:"🍊"},
-  {id:"refri", cat:"Bebidas", name:"Refrigerante Lata", desc:"350 ml, gelado", price:600, e:"🥤"},
-  {id:"pudim", cat:"Sobremesas", name:"Pudim de Leite", desc:"Fatia generosa com calda de caramelo", price:1000, e:"🍮"},
-  {id:"acai", cat:"Sobremesas", name:"Açaí na Tigela", desc:"300 ml com banana e granola", price:1600, e:"🍇"}
+  {id:"burger", cat:"Lanches", name:"Burger", desc:"Pão ciabata, burguer 180g, bacon, Catupiry, mussarela maionese da casa, alface americana, picles, tomate e cebola roxa. Acompanha batata crinckle e uma bebida a sua escolha.", price:3500, image:"../assets/img/burguer.jpeg"},
+  {id:"cheddar", cat:"Lanches", name:"Cheddar", desc:"Pão australiano, burguer de 180g, cheddar, cheddar cremoso cebola caramelizada. Acompanha batata crinckle e uma bebida a sua escolha.", price:3400, image:"../assets/img/cheddar.jpeg"},
+  {id:"costela", cat:"Lanches", name:"Costela", desc:"Pão australiano, burguer 180g, cebola empanada, bacon, cheddar, barbecue, cebola caramelizada e alface americana Acompanha batata crinckle e uma bebida a sua escolha.", price:3500, image:"../assets/img/costela.jpeg"},
+  {id:"frango", cat:"Lanches", name:"Frango", desc:"Pão de brioche, burguer de frango 200g, bacon Catupiry, mussarela, maionese da casa, alface americana, tomate e cebola roxa. Acompanha batata crinckle e uma bebida a sua escolha.", price:3500, image:"../assets/img/frango.jpeg"},
+  {id:"linguiça", cat:"Lanches", name:"Linguiça", desc:"Pão de brioche com gergelim, burguer de linguiça 180g, bacon, Catupiry, mussarela, maionese da casa, alface americana, tomate e cebola roxa Acompanha batata crinckle e uma bebida a sua escolha.", price:3500, image:"../assets/img/linguica.jpeg"},
+  {id:"salmão", cat:"Lanches", name:"Salmão", desc:"Pão australiano, burguer de salmão 150g, cream cheese, cebolinha e rúcula. Acompanha batata crinckle e uma bebida a sua escolha.", price:4000, image:"../assets/img/salmao.jpeg"},
+  {id:"vegetariano", cat:"Lanches", name:"Vegetariano", desc:"Pão australiano, queijo coalho 200g, maionese da casa, rúcula e tomate seco. Acompanha batata crinckle e uma bebida a sua escolha.", price:3900, image:"../assets/img/vegetariano.jpeg"},
+  {id:"coxinha", cat:"Porções", name:"Coxinha", desc:"Massa fina, recheada com frango desfiado", price:800, image:"../assets/img/coxinha.jpeg"},
+  {id:"nuggets", cat:"Porções", name:"Nuggets", desc:"Porção de nuggets, servida com maionese", price:1600, image:"../assets/img/nuggets.jpeg"},
+  {id:"batata", cat:"Porções", name:"Batata Frita Grande", desc:"Porção grande, servida com ketchup e maionese", price:1200, image:"../assets/img/batatas.jpeg"},
+  {id:"milkshake", cat:"Sobremesas", name:"Milk-shake", desc:"300 ml com sorvete batido com leite, Nutella de decoração,amendoim em cima e chantile.", price:1500, image:"../assets/img/milshake.jpeg"},
+  {id:"milkshake2", cat:"Sobremesas", name:"Milk-shake de Nutella", desc:"300 ml de sorvete com leite e Nutella ", price:1000, image:"../assets/img/milkshakeChoco.png"},
 ];
-var CATS = ["Todos","Lanches","Porções","Bebidas","Sobremesas"];
+var CATS = ["Todos","Lanches","Porções","Sobremesas"];
 var favs = {};
 var tab = "menu";
 var cat = "Todos";
@@ -34,7 +36,7 @@ function renderMenu(){
   }).join("");
   var rows = ITEMS.filter(function(i){ return cat==="Todos" || i.cat===cat; }).map(function(i){
     var on = !!favs[i.id];
-    return '<div class="item"><div class="emoji" aria-hidden="true">'+i.e+'</div>'+
+    return '<div class="item"><div class="emoji"><img src="'+i.image+'" alt=""></div>'+
       '<div class="info"><h3>'+i.name+'</h3><p>'+i.desc+'</p><span class="price">'+brl(i.price)+'</span></div>'+
       '<button class="heart" data-heart="'+i.id+'" aria-pressed="'+on+'" aria-label="'+(on?"Remover dos favoritos: ":"Adicionar aos favoritos: ")+i.name+'">'+(on?"♥":"♡")+'</button></div>';
   }).join("");

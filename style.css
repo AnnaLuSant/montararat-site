@@ -155,11 +155,6 @@ table {
    
 }
 
-
-
-
-
-
 .fixo .card {
     padding: 10px;
     width: 300px;
@@ -345,6 +340,13 @@ table {
     background: var(--pretoGrafite);
     border: 1px solid var(--cinzaQuente);
     border-radius: 14px;
+    overflow: hidden;
+}
+
+.emoji img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .info {
@@ -488,8 +490,14 @@ table {
     background: var(--surface);
 }
 
-.wrap h1 p {
+.wrap > header {
+    display: block;
+}
+
+.wrap main {
     color: var(--creme);
-    display: flex;
-    margin-top: 20px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
 }
