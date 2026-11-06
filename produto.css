@@ -1,0 +1,265 @@
+/* MONT ARARAT — PÁGINAS DE PRODUTO
+   CSS complementar: carregar após /style.css */
+.produto-layout {
+   width: min(1180px, calc(100% - 36px));
+   margin: 36px auto 22px;
+   display: grid;
+   grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+   gap: 24px;
+   align-items: start
+}
+
+.produto-destaque,
+.produto-configuracao {
+   border-radius: 24px;
+   overflow: hidden;
+   box-shadow: 0 18px 45px #0005
+}
+
+.produto-destaque {
+   background: linear-gradient(160deg, var(--marromCarvao), var(--pretoCarvao));
+   padding: 30px;
+   position: sticky;
+   top: 20px;
+   border: 1px solid #e0ae1844
+}
+
+.produto-foto {
+   margin: 0 auto 18px !important;
+   min-height: 310px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: radial-gradient(circle, #4b3a23 0%, transparent 70%);
+   border-radius: 20px
+}
+
+.produto-foto img {
+   width: min(100%, 390px);
+   height: 300px;
+   object-fit: contain;
+   filter: drop-shadow(0 16px 15px #0009);
+   border-radius: 18px
+}
+
+.produto-titulo {
+   font-size: clamp(2.6rem, 5vw, 4rem);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: var(--amareloClaro) !important;
+   margin: 12px 0 !important
+}
+
+.produto-descricao {
+   color: var(--creme) !important;
+   line-height: 1.6;
+   font-size: 1.12rem;
+   max-width: 45ch;
+   margin: 0 auto 26px
+}
+
+.produto-precos {
+   border-top: 1px solid #e0ae1844;
+   padding-top: 20px
+}
+
+.produto-precos h2 {
+   font-size: 1rem !important;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: var(--cinzaQuente) !important
+}
+
+.produto-precos h3 {
+   color: var(--creme) !important;
+   font-size: 1.18rem !important;
+   line-height: 1.5;
+   margin: 10px 0
+}
+
+.produto-precos h3:first-of-type {
+   color: var(--amareloClaro) !important
+}
+
+.produto-configuracao {
+   background: var(--creme);
+   padding: 30px;
+   color: var(--pretoCarvao)
+}
+
+.produto-configuracao h2 {
+   color: var(--pretoCarvao) !important;
+   text-align: left;
+   font-size: 1.8rem;
+   margin-bottom: 18px
+}
+
+.produto-configuracao fieldset {
+   margin: 0 0 22px !important;
+   padding: 18px !important;
+   border: 1px solid #c9baa0 !important;
+   border-radius: 16px;
+   min-width: 0
+}
+
+.produto-configuracao legend {
+   float: none;
+   width: auto;
+   padding: 0 8px;
+   margin: 0 0 12px !important;
+   color: var(--marromCarvao) !important;
+   font-size: 1.16rem;
+   font-weight: 600
+}
+
+.produto-configuracao label,
+.produto-configuracao form p,
+.produto-configuracao fieldset {
+   color: var(--pretoCarvao) !important
+}
+
+.produto-configuracao label {
+   margin: 0 !important;
+   cursor: pointer
+}
+
+.produto-opcoes fieldset {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px
+}
+
+.produto-opcoes label {
+   flex: 1;
+   min-width: 125px;
+   display: flex;
+   gap: 9px;
+   align-items: center;
+   justify-content: center;
+   padding: 14px;
+   border: 2px solid var(--amareloMostarda);
+   border-radius: 12px;
+   background: #fff9eb;
+   font-weight: 600
+}
+
+.produto-configuracao input[type="checkbox"],
+.produto-configuracao input[type="radio"] {
+   accent-color: var(--terracota);
+   width: 18px;
+   height: 18px;
+   flex-shrink: 0
+}
+
+.produto-extra {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin: 0 0 10px !important;
+   padding: 13px !important;
+   background: #fffaf0;
+   border: 1px solid #d9cdb7;
+   border-radius: 12px;
+   text-align: left !important;
+   transition: border-color .2s, transform .2s
+}
+
+.produto-extra:has(input[type="checkbox"]:checked) {
+   border-color: var(--amareloMostarda);
+   background: #fff2c7
+}
+
+.produto-extra label:has(input[type="checkbox"]) {
+   display: inline-flex;
+   align-items: center;
+   gap: 9px;
+   flex: 1;
+   min-width: 180px
+}
+
+.produto-configuracao select,
+.produto-configuracao textarea {
+   background: #fff;
+   color: var(--pretoCarvao);
+   border: 1px solid #b8a98e;
+   border-radius: 9px;
+   padding: 9px 12px;
+   max-width: 100%;
+   font-family: inherit
+}
+
+.produto-configuracao select:disabled {
+   opacity: .55
+}
+
+.produto-configuracao textarea {
+   min-height: 95px;
+   height: 110px;
+   width: 100%;
+   margin-top: 8px
+}
+
+.produto-formulario .btn-principal {
+   display: flex;
+   width: 100%;
+   margin: 8px 0 0 !important;
+   font-size: 1.15rem;
+   min-height: 54px
+}
+
+.produto-layout+nav .paginacao-produtos {
+   padding: 12px 20px 30px
+}
+
+@media(max-width:850px) {
+   .produto-layout {
+      grid-template-columns: 1fr;
+      max-width: 680px
+   }
+
+   .produto-destaque {
+      position: static
+   }
+
+   .produto-foto {
+      min-height: 250px
+   }
+
+   .produto-foto img {
+      height: 250px
+   }
+}
+
+@media(max-width:480px) {
+   .produto-layout {
+      width: calc(100% - 20px);
+      gap: 14px;
+      margin-top: 18px
+   }
+
+   .produto-destaque,
+   .produto-configuracao {
+      padding: 20px;
+      border-radius: 18px
+   }
+
+   .produto-extra label:has(input[type="checkbox"]) {
+      min-width: 100%
+   }
+
+   .produto-foto img {
+      height: 220px
+   }
+
+   .produto-foto {
+      min-height: 220px
+   }
+}
+/* Harmonização dos produtos antigos com o layout atual */
+.produto-configuracao .produto-grupo { margin-bottom:18px; }
+.produto-configuracao .produto-grupo legend { color:var(--pretoCarvao); font-weight:600; }
+.produto-configuracao .produto-grupo p,.produto-configuracao label { color:var(--pretoCarvao) !important; }
+.produto-configuracao .produto-opcoes-titulo { color:var(--pretoCarvao) !important; text-align:left; }
+.produto-destaque .produto-precos h2 { color:var(--cinzaQuente) !important; }
+.produto-destaque .produto-precos h3 { color:var(--creme) !important; }
