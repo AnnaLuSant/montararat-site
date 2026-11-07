@@ -1,19 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Pagamento</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+
     <!--Fontes do site-->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
+    <link href="../paginas.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="site-body pagina-paga">
     <header class="site-header">
+<<<<<<< HEAD
 
         <!-- LOGO -->
         <div class="logo">
@@ -50,15 +55,29 @@
                         <img src="/assets/img/carrinho.png" alt="Carrinho de compras">
                     </a>
                 </li>
+=======
+        <div class="logo"><a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+                    src="../assets/img/logo.jpeg" width="100" /></a></div>
+        <nav aria-label="Navegação principal" class="main-nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="avaliacoes.html">Avaliações</a></li>
+                <li class="nav-item"><a class="nav-link" href="locais.html">Locais</a></li>
+                <li class="nav-item"><a class="nav-link" href="maisvendidos.html">Mais vendidos</a></li>
+                <li class="nav-item"><a class="nav-link carrinho-link" href="carrinho.html"><img
+                            alt="Carrinho de compras" src="../assets/img/carrinho.png" /></a></li>
+>>>>>>> e8e8605edf90fe42a4a77234b2ed9c9dbca24b8a
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="pagina-conteudo conteudo-paga">
         <h1>Finalizar Pagamento</h1>
-
-        <section aria-labelledby="voce-pagara">
+        <section aria-labelledby="voce-pagara" class="conteudo-card">
             <h2 id="voce-pagara">Você pagará:</h2>
-            <table>
+            <table class="tabela-pedido">
                 <caption>Resumo do pedido</caption>
                 <thead>
                     <tr>
@@ -86,53 +105,69 @@
                 </tbody>
             </table>
         </section>
-
-        <section aria-labelledby="info-pagamento">
+        <section aria-labelledby="info-pagamento" class="conteudo-card">
             <h2 id="info-pagamento">Informações para pagamento</h2>
-            <form action="/cadastro" method="get">
+            <p class="aviso-demonstracao">Página demonstrativa: não informe dados reais de cartão, CPF ou PIX. Nenhuma
+                cobrança é processada.</p>
+            <form action="#" class="form-pagamento" method="get">
                 <fieldset>
                     <legend>Dados para o pagamento</legend>
                     <p>
                         <label for="nome">Nome completo</label>
-                        <input id="nome" name="nome" required="" type="text">
+                        <input id="nome" name="nome" required="" type="text" />
                     </p>
                     <p>
                         <label for="cpf">CPF</label>
-                        <input id="cpf" name="cpf" required="" type="text">
+                        <input disabled="" id="cpf" name="cpf" placeholder="Desativado na demonstração" required=""
+                            type="text" />
                     </p>
                     <p>
                         <label for="cartao">Número do cartão</label>
-                        <input id="cartao" name="cartao" required="" type="text">
+                        <input disabled="" id="cartao" name="cartao" placeholder="Desativado na demonstração"
+                            required="" type="text" />
                     </p>
                     <p>
                         <label for="validade">Validade</label>
-                        <input id="validade" name="validade" required="" type="text">
+                        <input disabled="" id="validade" name="validade" placeholder="Desativado na demonstração"
+                            required="" type="text" />
                     </p>
                     <p>
                         <label for="cvv">CVV</label>
-                        <input id="cvv" name="cvv" required="" type="text">
+                        <input disabled="" id="cvv" name="cvv" placeholder="Desativado na demonstração" required=""
+                            type="text" />
                     </p>
                     <p>
                         <label for="pix">PIX</label>
-                        <input id="pix" name="metodo_pagamento" required="" type="radio" value="pix">
+                        <input id="pix" name="metodo_pagamento" required="" type="radio" value="pix" />
                     </p>
-                    <details>
-                        <summary style="cursor: pointer; font-weight: bold;">PIX (Clique para gerar a chave)</summary>
-                        <div
-                            style="margin-top: 10px; padding: 10px; border: 1px dashed #ccc; background-color: #f9f9f9;">
-                            <p><strong>Copia e Cola:</strong></p>
-                            <code
-                                id="pix-code">00020126360014BR.GOV.BCB.PIX0114+5511999999999520400005303986540510.005802BR5913Nome Recebedor6008SPO62070503***6304E2CA</code>
-                        </div>
-                    </details>
+
                 </fieldset>
             </form>
-            <button onclick="window.location.href='compro.html'" type="button">Finalizar Pagamento</button>
+            <button class="btn-principal" disabled="" type="button">Pagamento demonstrativo — não processado</button>
         </section>
     </main>
     <footer class="site-footer">
-        <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
-    </footer>
+    <div class="footer-container">
+      <div class="footer-col footer-brand"><a class="footer-logo" href="../index.html"><img
+            alt="Mont Ararat Hamburgueria" height="72" src="../assets/img/logo.jpeg" width="72" /><span>Mont
+            Ararat<small>Hamburgueria artesanal</small></span></a>
+        <p>Embarque nessa montanha de sabores!</p>
+      </div>
+
+      <div class="footer-col">
+
+      </div>
+
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <address>R. Vercínio Pereira de Souza, 1199<br />São Mateus, São Paulo – SP<br />CEP 03945-000</address>
+        <a href="contato.html">Fale conosco</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 
 </html>

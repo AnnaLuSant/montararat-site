@@ -1,0 +1,373 @@
+/* Mont Ararat — estilos complementares das páginas internas */
+.pagina-conteudo {
+    width: min(1160px, calc(100% - 32px));
+    margin: 36px auto 60px
+}
+
+.pagina-conteudo>h1,
+.topo h1 {
+    color: var(--amareloClaro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px
+}
+
+.pagina-conteudo>h2,
+.pagina-conteudo>h3 {
+    color: var(--amareloClaro);
+    margin: 24px 0 16px
+}
+
+.pagina-conteudo .conteudo-card,
+.pagina-conteudo>section,
+.pagina-conteudo>article:not(.produto-layout) {
+    background: var(--creme);
+    color: var(--pretoCarvao);
+    border: 1px solid #e0ae1844;
+    border-radius: 20px;
+    padding: clamp(20px, 3vw, 34px);
+    margin: 20px 0;
+    box-shadow: 0 16px 35px #0004
+}
+
+.pagina-conteudo .conteudo-card h2,
+.pagina-conteudo .conteudo-card h3,
+.pagina-conteudo>article h2,
+.pagina-conteudo>section h2 {
+    color: var(--marromCarvao);
+    text-align: left
+}
+
+.pagina-conteudo .conteudo-card p,
+.pagina-conteudo>article p,
+.pagina-conteudo>section p,
+.pagina-conteudo .conteudo-card label,
+.pagina-conteudo .conteudo-card legend {
+    color: var(--pretoCarvao)
+}
+
+.pagina-conteudo .conteudo-card p {
+    text-align: left;
+    line-height: 1.7
+}
+
+.pagina-conteudo .conteudo-card a:not(.btn-principal):not(.btn-secundario) {
+    color: #8d381e
+}
+
+.pagina-conteudo .conteudo-card input:not([type=radio]),
+.pagina-conteudo .conteudo-card textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #b8a98e;
+    border-radius: 9px;
+    padding: 12px;
+    background: #fff;
+    color: var(--pretoCarvao)
+}
+
+.pagina-conteudo fieldset {
+    margin: 0;
+    padding: 18px;
+    border: 1px solid #c9baa0;
+    border-radius: 12px
+}
+
+.pagina-conteudo label {
+    display: block;
+    margin: 0 0 8px
+}
+
+.pagina-conteudo .btn-principal,
+.pagina-conteudo .btn-secundario {
+    margin: 10px 0
+}
+
+.conteudo-avaliacoes .avaliacao-form {
+    max-width: 760px;
+    margin: 20px auto
+}
+
+.conteudo-avaliacoes .avaliacao-form .row {
+    margin-bottom: 18px
+}
+
+.conteudo-avaliacoes .avaliacao-form .form-label {
+    color: var(--pretoCarvao);
+    text-align: left
+}
+
+.conteudo-avaliacoes .avaliacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px
+}
+
+.conteudo-avaliacoes .avaliacao input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px
+}
+
+.conteudo-avaliacoes .avaliacao label {
+    font-size: 2.4rem;
+    color: #8c8273;
+    cursor: pointer;
+    line-height: 1.2
+}
+
+.conteudo-avaliacoes .avaliacao label:hover,
+.conteudo-avaliacoes .avaliacao label:hover~label,
+.conteudo-avaliacoes .avaliacao input:checked~label {
+    color: #bd7e00
+}
+
+.conteudo-avaliacoes .avaliacao input:focus-visible+label {
+    outline: 2px solid var(--terracota);
+    border-radius: 5px
+}
+
+.conteudo-avaliacoes .comentario-card {
+    background: var(--creme);
+    border-left: 5px solid var(--amareloMostarda);
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin: 15px 0
+}
+
+.conteudo-avaliacoes .comentario-card p {
+    color: var(--pretoCarvao);
+    text-align: left;
+    margin: 6px 0
+}
+
+.conteudo-locais>article {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important
+}
+
+.conteudo-locais>article>h1 {
+    color: var(--amareloClaro)
+}
+
+.conteudo-locais>article>p {
+    color: var(--creme) !important
+}
+
+.conteudo-locais .local-card {
+    background: var(--creme);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 14px 32px #0005;
+    height: 100%
+}
+
+.conteudo-locais .local-card h2,
+.conteudo-locais .local-card p,
+.conteudo-locais .local-card figcaption {
+    color: var(--pretoCarvao) !important
+}
+
+.conteudo-locais .local-card h2 {
+    font-size: 1.5rem;
+    text-align: center
+}
+
+.conteudo-locais .local-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+.conteudo-locais .local-card iframe {
+    width: 100%;
+    border-radius: 12px
+}
+
+.conteudo-maisvendidos .topo p {
+    color: var(--creme)
+}
+
+.conteudo-maisvendidos .podio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0
+}
+
+.conteudo-maisvendidos .ranking-card {
+    background: var(--creme);
+    border: 2px solid var(--amareloMostarda);
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative
+}
+
+.conteudo-maisvendidos .ranking-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover
+}
+
+.conteudo-maisvendidos .ranking-card .info {
+    padding: 20px
+}
+
+.conteudo-maisvendidos .ranking-card .info h2,
+.conteudo-maisvendidos .ranking-card .info p {
+    color: var(--pretoCarvao)
+}
+
+.conteudo-maisvendidos .posicao {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-weight: bold
+}
+
+.conteudo-maisvendidos .preco {
+    color: #8d381e;
+    font-weight: 700;
+    font-size: 1.2rem
+}
+
+.conteudo-maisvendidos .ranking-card a.btn {
+    background: var(--amareloMostarda);
+    color: var(--pretoCarvao);
+    margin-top: 15px;
+    border: 0;
+    padding: 12px 18px
+}
+
+.conteudo-maisvendidos .lista {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px
+}
+
+.conteudo-maisvendidos .lista li {
+    background: #fff8e8;
+    color: var(--pretoCarvao);
+    padding: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    text-align: left
+}
+
+.conteudo-maisvendidos .lista small {
+    display: block;
+    color: #62584c
+}
+
+.conteudo-maisvendidos .lista .num {
+    font-weight: 700;
+    color: #8d381e
+}
+
+.conteudo-porcoes>article>div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px
+}
+
+.conteudo-porcoes>article>div>h2 {
+    grid-column: 1/-1
+}
+
+.conteudo-porcoes .porcao-card {
+    background: #fff8e8;
+    padding: 14px;
+    border-radius: 14px;
+    margin: 0 !important
+}
+
+.conteudo-porcoes .porcao-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+.conteudo-porcoes .porcao-card figcaption {
+    color: var(--pretoCarvao);
+    padding: 10px
+}
+
+.conteudo-paga .tabela-pedido,
+.conteudo-compro .tabela-pedido {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--pretoCarvao)
+}
+
+.tabela-pedido th,
+.tabela-pedido td {
+    border-bottom: 1px solid #cbbca4;
+    padding: 12px;
+    text-align: left
+}
+
+.tabela-pedido caption {
+    color: var(--marromCarvao)
+}
+
+.aviso-demonstracao {
+    padding: 12px 16px;
+    background: #fff0c5;
+    border-left: 4px solid #9a5b00;
+    color: #4c3300 !important;
+    text-align: left
+}
+
+.form-pagamento input {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px 0 14px
+}
+
+@media(max-width:800px) {
+
+    .conteudo-maisvendidos .podio,
+    .conteudo-porcoes>article>div {
+        grid-template-columns: 1fr
+    }
+
+    .conteudo-porcoes>article>div>h2 {
+        grid-column: auto
+    }
+}
+
+@media(max-width:600px) {
+    .pagina-conteudo {
+        width: calc(100% - 20px)
+    }
+
+    .conteudo-maisvendidos .lista li {
+        flex-wrap: wrap
+    }
+
+    .site-header {
+        flex-wrap: wrap
+    }
+
+    .main-nav .nav-tabs {
+        justify-content: center
+    }
+}

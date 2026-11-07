@@ -1,19 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliações</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <!--Fontes do site-->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="site-header">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Avaliações</title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
 
+  <!--Fontes do site-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="../style.css" rel="stylesheet" />
+  <link href="../paginas.css" rel="stylesheet" />
+</head>
+
+<<<<<<< HEAD
         <!-- LOGO -->
         <div class="logo">
             <a href="/index.html">
@@ -145,12 +147,116 @@
                     <br>
                 </div>
             </div>
+=======
+<body class="site-body pagina-avaliacoes">
+  <header class="site-header">
+    <div class="logo"><a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+          src="../assets/img/logo.jpeg" width="100" /></a></div>
+    <nav aria-label="Navegação principal" class="main-nav">
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        <li class="nav-item"><a class="nav-link active" href="avaliacoes.html">Avaliações</a></li>
+        <li class="nav-item"><a class="nav-link" href="locais.html">Locais</a></li>
+        <li class="nav-item"><a class="nav-link" href="maisvendidos.html">Mais vendidos</a></li>
+        <li class="nav-item"><a class="nav-link carrinho-link" href="carrinho.html"><img alt="Carrinho de compras"
+              src="../assets/img/carrinho.png" /></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pagina-conteudo conteudo-avaliacoes">
+    <h1>Avaliações</h1>
+    <h2>Deixe sua avaliação</h2>
+    <form action="#" aria-label="Formulário de avaliação" class="avaliacao-form conteudo-card" method="get">
+      <div class="row">
+        <div class="col-12">
+          <label class="form-label" for="formGroupExampleInput">Nome</label>
+          <input class="form-control" id="formGroupExampleInput" name="nome" placeholder="Digite seu nome" required=""
+            type="text" />
         </div>
-        <p>&copy;2026, Mont Ararat Hamburgueria.</p>
-    </footer>
-    <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/JavaScript/script.js"></script>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <label class="form-label" for="formGroupExampleInput2">Dê sua opinião</label>
+          <input class="form-control" id="formGroupExampleInput2" name="opiniao" placeholder="Me de seua opiniao"
+            required="" type="text" />
+>>>>>>> e8e8605edf90fe42a4a77234b2ed9c9dbca24b8a
+        </div>
+      </div>
+      <br /><br />
+      <label for="estrelas">Sua nota:</label>
+      <div class="avaliacao">
+        <input id="estrela5" name="nota" type="radio" value="5" />
+        <label for="estrela5">★</label>
+        <input id="estrela4" name="nota" type="radio" value="4" />
+        <label for="estrela4">★</label>
+        <input id="estrela3" name="nota" type="radio" value="3" />
+        <label for="estrela3">★</label>
+        <input id="estrela2" name="nota" type="radio" value="2" />
+        <label for="estrela2">★</label>
+        <input id="estrela1" name="nota" type="radio" value="1" />
+        <label for="estrela1">★</label>
+      </div>
+
+      <br /><br />
+      <button class="btn-principal" type="submit">Enviar avaliação</button>
+    </form>
+    <h3 class="comentarios-titulo">Comentários</h3>
+    <br /><br />
+    <article class="comentario-card">
+      <p>Nome: Vitória Rodrigues</p>
+      <p>Comentário: Carne veio crua, e teve um pequeno erro no serviço, pedi uma coca-cola normal e veio zero.
+      </p>
+      <p>1 estrela</p>
+    </article>
+
+
+    <br /><br />
+    <article class="comentario-card">
+      <p>Nome: Roberto Carlos</p>
+      <p>Comentário: Atendimento rápido e eficiente.</p>
+      <p>5 estrelas</p>
+    </article>
+
+
+    <br /><br />
+    <article class="comentario-card">
+      <p>Nome: Clotilde santana </p>
+      <p>Comentário: Atendimento rápido, mas poderia ser melhor.</p>
+      <p>3 estrelas</p>
+    </article>
+
+
+    <br />
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand"><a class="footer-logo" href="../index.html"><img
+            alt="Mont Ararat Hamburgueria" height="72" src="../assets/img/logo.jpeg" width="72" /><span>Mont
+            Ararat<small>Hamburgueria artesanal</small></span></a>
+        <p>Embarque nessa montanha de sabores!</p>
+      </div>
+
+      <div class="footer-col">
+
+      </div>
+
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <address>R. Vercínio Pereira de Souza, 1199<br />São Mateus, São Paulo – SP<br />CEP 03945-000</address>
+        <a href="contato.html">Fale conosco</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../JavaScript/script.js"></script>
 </body>
 
 </html>
