@@ -115,27 +115,27 @@ Abaixo está o registro da validação de cada página no W3C, com o caminho do 
 
 | Página | Validado | Print |
 | --- | --- | --- |
-| `index.html` | Sim | assets/validacoes/index_v.png |
-| `pages/ajuda.html` | Sim | assets/validacoes/ajuda_v.png |
-| `pages/avaliacoes.html` | Sim | assets/validacoes/avaliacoes_v.png |
-| `pages/burguer.html` | Sim | assets/validacoes/burguer_v.png |
-| `pages/cardapio.html` | Sim | assets/validacoes/cardapio_v.png |
-| `pages/carrinho.html` | Sim | assets/validacoes/carrinho_v.png |
-| `pages/cheddar.html` | Sim | assets/validacoes/cheddar_v.png |
-| `pages/compro.html` | Sim | assets/validacoes/compro_v.png |
-| `pages/contato.html` | Sim | assets/validacoes/contato_v.png |
-| `pages/costela.html` | Sim | assets/validacoes/costela_v.png |
-| `pages/doces.html` | Sim | assets/validacoes/doces_v.png |
-| `pages/frango.html` | Sim | assets/validacoes/frango_v.png |
-| `pages/linguica.html` | Sim | assets/validacoes/linguiça.png |
-| `pages/locais.html` | Sim | assets/validacoes/locais_v.png |
-| `pages/maisvendidos.html` | Sim | assets/validacoes/mv_v.png |
-| `pages/milkshakes.html` | Sim | assets/validacoes/milkshake_v.png |
-| `pages/paga.html` | Sim | assets/validacoes/paga_v.png |
-| `pages/porcoes.html` | Sim | assets/validacoes/porcoes_v.png |
-| `pages/salmao.html` | Sim | assets/validacoes/salmao_v.png |
-| `pages/sobrenos.html` | Sim | assets/validacoes/sobre_v.png |
-| `pages/vegetariano.html` | Sim | assets/validacoes/vegetariano_v.png |
+| `index.html` | Sim | [Ver Print](assets/validacoes/index_v.png) |
+| `pages/ajuda.html` | Sim | [Ver Print](assets/validacoes/ajuda_v.png) |
+| `pages/avaliacoes.html` | Sim | [Ver Print](assets/validacoes/avaliacoes_v.png) |
+| `pages/burguer.html` | Sim | [Ver Print](assets/validacoes/burguer_v.png) |
+| `pages/cardapio.html` | Sim | [Ver Print](assets/validacoes/cardapio_v.png) |
+| `pages/carrinho.html` | Sim | [Ver Print](assets/validacoes/carrinho_v.png) |
+| `pages/cheddar.html` | Sim | [Ver Print](assets/validacoes/cheddar_v.png) |
+| `pages/compro.html` | Sim | [Ver Print](assets/validacoes/compro_v.png) |
+| `pages/contato.html` | Sim | [Ver Print](assets/validacoes/contato_v.png) |
+| `pages/costela.html` | Sim | [Ver Print](assets/validacoes/costela_v.png) |
+| `pages/doces.html` | Sim | [Ver Print](assets/validacoes/doces_v.png) |
+| `pages/frango.html` | Sim | [Ver Print](assets/validacoes/frango_v.png) |
+| `pages/linguica.html` | Sim | [Ver Print](assets/validacoes/linguiça.png) |
+| `pages/locais.html` | Sim | [Ver Print](assets/validacoes/locais_v.png) |
+| `pages/maisvendidos.html` | Sim | [Ver Print](assets/validacoes/mv_v.png) |
+| `pages/milkshakes.html` | Sim | [Ver Print](assets/validacoes/milkshake_v.png) |
+| `pages/paga.html` | Sim | [Ver Print](assets/validacoes/paga_v.png) |
+| `pages/porcoes.html` | Sim | [Ver Print](assets/validacoes/porcoes_v.png) |
+| `pages/salmao.html` | Sim | [Ver Print](assets/validacoes/salmao_v.png) |
+| `pages/sobrenos.html` | Sim | [Ver Print](assets/validacoes/sobre_v.png) |
+| `pages/vegetariano.html` | Sim | [Ver Print](assets/validacoes/vegetariano_v.png) |
 
 <br>
 
