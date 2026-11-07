@@ -149,4 +149,7 @@ A validação no W3C foi outro desafio: o validador aponta erros extremamente mi
 
 Ao fim da entrega 2, o projeto ficou com uma interface muito mais harmônica e estruturada, com elementos funcionais em JavaScript, estilização em CSS e um HTML mais limpo e bem organizado. A evolução em comparação com a entrega 1 é notável, tanto no visual quanto na organização do código e na quantidade de páginas e funcionalidades do site.
 
+
+### Site final
+https://astonishing-bavarois-e462b0.netlify.app/
 ---
