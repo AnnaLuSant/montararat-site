@@ -1,124 +1,129 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Locais - Mont Ararat Hamburgueria</title>
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+
   <!--Fontes do site-->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="../style.css" rel="stylesheet" />
+  <link href="../paginas.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="site-body pagina-locais">
   <header class="site-header">
-    <div class="logo">
-      <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="/assets/img/logo.jpeg"
-          width="100"></a>
-    </div>
+    <div class="logo"><a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+          src="../assets/img/logo.jpeg" width="100" /></a></div>
     <nav aria-label="Navegação principal" class="main-nav">
-      <ul>
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/pages/sobrenos.html">Sobre</a></li>
-        <li><a href="/pages/carrinho.html">Carrinho</a></li>
-        <li><a href="/pages/contato.html">Contato</a></li>
-        <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
-        <li><a href="/pages/locais.html">Locais</a></li>
-        <li><a href="/pages/ajuda.html">Ajuda</a></li>
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        <li class="nav-item"><a class="nav-link" href="avaliacoes.html">Avaliações</a></li>
+        <li class="nav-item"><a class="nav-link active" href="locais.html">Locais</a></li>
+        <li class="nav-item"><a class="nav-link" href="maisvendidos.html">Mais vendidos</a></li>
+        <li class="nav-item"><a class="nav-link carrinho-link" href="carrinho.html"><img alt="Carrinho de compras"
+              src="../assets/img/carrinho.png" /></a></li>
       </ul>
     </nav>
   </header>
-
-  <main class="container my-5">
+  <main class="pagina-conteudo conteudo-locais">
     <article>
       <h1>Nossos Locais</h1>
       <p class="text-center">Descubra qual Mont Ararat está mais próximo de você.</p>
-      <br>
-
+      <br />
       <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-
         <!-- Unidade São Mateus -->
-        <section class="col" aria-labelledby="local-1">
+        <section aria-labelledby="local-1" class="col local-card">
           <figure>
-            <img alt="Foto da fachada da unidade de São Mateus" class="img-fluid rounded mb-3" src="/assets/img/ararat_frente.jpeg" width="400" height="400" style="object-fit: cover;">
+            <img alt="Foto da fachada da unidade de São Mateus" class="img-fluid rounded mb-3" height="400"
+              src="../assets/img/ararat_frente.jpeg" style="object-fit: cover;" width="400" />
             <figcaption>São Mateus - SP</figcaption>
           </figure>
           <h2 id="local-1">Unidade São Mateus</h2>
           <p>A sede principal do Mont Ararat, localizada no bairro de São Mateus, em São Paulo.</p>
           <p><strong>Endereço:</strong></p>
-          <p>R. Vercínio Pereira de Souza, 1199<br>
-          São Mateus, São Paulo - SP, 03945-000</p>
-          
+          <p>R. Vercínio Pereira de Souza, 1199<br />
+            São Mateus, São Paulo - SP, 03945-000</p>
           <!-- Mapa São Mateus -->
           <div class="mt-3">
-            <iframe
-                title="Localização da Mont Ararat Hamburgueria em São Mateus"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
-                width="100%" height="220" style="border:0; border-radius: 8px;"
-                allowfullscreen loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe allowfullscreen="" height="220" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
+              style="border:0; border-radius: 8px;" title="Localização da Mont Ararat Hamburgueria em São Mateus"
+              width="100%"></iframe>
           </div>
         </section>
-
         <!-- Unidade Suzano -->
-        <section class="col" aria-labelledby="local-2">
+        <section aria-labelledby="local-2" class="col local-card">
           <figure>
-            <img alt="Foto da fachada da unidade de Suzano" class="img-fluid rounded mb-3" src="/assets/img/ararat_suzano.jpg" width="400" height="400" style="object-fit: cover;">
+            <img alt="Foto da fachada da unidade de Suzano" class="img-fluid rounded mb-3" height="400"
+              src="../assets/img/ararat_suzano.jpg" style="object-fit: cover;" width="400" />
             <figcaption>Suzano - SP</figcaption>
           </figure>
           <h2 id="local-2">Unidade Suzano</h2>
           <p>A segunda unidade do Mont Ararat, localizada no município de Suzano, em São Paulo.</p>
           <p><strong>Endereço:</strong></p>
-          <p>R. Catarina Parente Irente, 663<br>
-          Jardim Luella, Suzano - SP, 08616-280</p>
-          
+          <p>R. Catarina Parente Irente, 663<br />
+            Jardim Luella, Suzano - SP, 08616-280</p>
           <!-- Mapa Suzano -->
           <div class="mt-3">
-            <iframe 
-                title="Localização da Mont Ararat Hamburgueria em Suzano"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3495110163544!2d-46.292911925488085!3d-23.555887561389497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7134b4b0cf53%3A0x33a40f60dc80fcc0!2sMont%20Ararat%20Hamburgueria-Suzano!5e0!3m2!1spt-BR!2sbr!4v1793971683050!5m2!1spt-BR!2sbr" 
-                width="100%" height="220" style="border:0; border-radius: 8px;" 
-                allowfullscreen="" loading="lazy" 
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe allowfullscreen="" height="220" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3495110163544!2d-46.292911925488085!3d-23.555887561389497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7134b4b0cf53%3A0x33a40f60dc80fcc0!2sMont%20Ararat%20Hamburgueria-Suzano!5e0!3m2!1spt-BR!2sbr!4v1793971683050!5m2!1spt-BR!2sbr"
+              style="border:0; border-radius: 8px;" title="Localização da Mont Ararat Hamburgueria em Suzano"
+              width="100%"></iframe>
           </div>
         </section>
-
         <!-- Unidade Mogi das Cruzes -->
-        <section class="col" aria-labelledby="local-3">
+        <section aria-labelledby="local-3" class="col local-card">
           <figure>
-            <img alt="Foto da fachada da unidade de Mogi das Cruzes" class="img-fluid rounded mb-3" src="/assets/img/ararat_mogi.jpg" width="400" height="400" style="object-fit: cover;">
+            <img alt="Foto da fachada da unidade de Mogi das Cruzes" class="img-fluid rounded mb-3" height="400"
+              src="../assets/img/ararat_mogi.jpg" style="object-fit: cover;" width="400" />
             <figcaption>Mogi das Cruzes - SP</figcaption>
           </figure>
           <h2 id="local-3">Unidade Mogi das Cruzes</h2>
           <p>A terceira unidade do Mont Ararat, localizada no município de Mogi das Cruzes, em São Paulo.</p>
           <p><strong>Endereço:</strong></p>
-          <p>R. Francisco Lamas, 207<br>
-          Jardim Armenia, Mogi das Cruzes - SP, 08780-790</p>
-          
+          <p>R. Francisco Lamas, 207<br />
+            Jardim Armenia, Mogi das Cruzes - SP, 08780-790</p>
           <!-- Mapa Mogi das Cruzes -->
           <div class="mt-3">
-            <iframe 
-                title="Localização da Mont Ararat Hamburgueria em Mogi das Cruzes"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4478068694752!2d-46.178791025489396!3d-23.516390959939994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd97149fb041b%3A0x279be5de3a6ffb0a!2sMont%20Ararat%20Hamb%C3%BArgueria%20-%20Mogi%20das%20Cruzes!5e0!3m2!1spt-BR!2sbr!4v1793971775795!5m2!1spt-BR!2sbr" 
-                width="100%" height="220" style="border:0; border-radius: 8px;" 
-                allowfullscreen="" loading="lazy" 
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe allowfullscreen="" height="220" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4478068694752!2d-46.178791025489396!3d-23.516390959939994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd97149fb041b%3A0x279be5de3a6ffb0a!2sMont%20Ararat%20Hamb%C3%BArgueria%20-%20Mogi%20das%20Cruzes!5e0!3m2!1spt-BR!2sbr!4v1793971775795!5m2!1spt-BR!2sbr"
+              style="border:0; border-radius: 8px;" title="Localização da Mont Ararat Hamburgueria em Mogi das Cruzes"
+              width="100%"></iframe>
           </div>
         </section>
-
       </div>
     </article>
   </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand"><a class="footer-logo" href="../index.html"><img
+            alt="Mont Ararat Hamburgueria" height="72" src="../assets/img/logo.jpeg" width="72" /><span>Mont
+            Ararat<small>Hamburgueria artesanal</small></span></a>
+        <p>Embarque nessa montanha de sabores!</p>
+      </div>
 
-  <footer class="site-footer py-4">
-    <div class="container text-center">
-        <p><strong>Contato Geral:</strong> Telefone: (11) 2015-5871 | WhatsApp: (11) 9 96918-8936</p>
-        <div class="mt-3">
-            <p>&copy; 2026, Mont Ararat Hamburgueria.</p>
-        </div>
+      <div class="footer-col">
+
+      </div>
+
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <address>R. Vercínio Pereira de Souza, 1199<br />São Mateus, São Paulo – SP<br />CEP 03945-000</address>
+        <a href="contato.html">Fale conosco</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
+
 </html>

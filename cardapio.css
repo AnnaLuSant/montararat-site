@@ -1,0 +1,38 @@
+.cardapio-grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 24px
+}
+
+.cardapio-item {
+    background: #302820;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px
+}
+
+.cardapio-item img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+.cardapio-item h3 {
+    color: #f3ca45
+}
+
+.cardapio-item .btn-principal {
+    margin-top: auto
+}
+
+@media(max-width:750px) {
+    .cardapio-grade {
+        grid-template-columns: 1fr
+    }
+}

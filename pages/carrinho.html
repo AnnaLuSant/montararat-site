@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Carrinho</title>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Carrinho</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
 
 
-<!--Fontes do site-->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="/style.css" rel="stylesheet"/><link href="/produto.css" rel="stylesheet"/></head>
+    <!--Fontes do site-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/produto.css" rel="stylesheet" />
+</head>
+
 <body class="site-body">
-<header class="site-header"><div class="logo"><a href="/index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100" src="/assets/img/logo.jpeg" width="100"/></a></div><nav aria-label="Navegação principal" class="main-nav"><ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link" href="/index.html">Início</a></li><li class="nav-item"><a class="nav-link" href="/pages/sobrenos.html">Sobre</a></li><li class="nav-item"><a class="nav-link" href="/pages/contato.html">Contato</a></li><li class="nav-item"><a class="nav-link" href="/pages/avaliacoes.html">Avaliações</a></li><li class="nav-item"><a class="nav-link carrinho-link" href="/pages/carrinho.html"><img alt="Carrinho de compras" src="/assets/img/carrinho.png"/></a></li></ul></nav></header>
-<main class="container py-5 pagina-conteudo">
-<h1>Meu Carrinho</h1>
-<section aria-labelledby="seus-itens">
-<h2 id="seus-itens">Seus itens:</h2>
-<!-- Produtos adicionados pelo JavaScript -->
-<div id="lista-carrinho"></div>
-<br/>
-<div class="d-flex justify-content-between align-items-center">
-<h2>Total do pedido:</h2>
-<h2 id="total-carrinho">R$ 0,00</h2>
-</div>
-<div class="acoes-carrinho">
-<!-- CONTINUAR COMPRANDO -->
-<a class="btn-continuar" href="/index.html">
+    <header class="site-header">
+        <div class="logo"><a href="/index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+                    src="/assets/img/logo.jpeg" width="100" /></a></div>
+        <nav aria-label="Navegação principal" class="main-nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/sobrenos.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/avaliacoes.html">Avaliações</a></li>
+                <li class="nav-item"><a class="nav-link carrinho-link" href="/pages/carrinho.html"><img
+                            alt="Carrinho de compras" src="/assets/img/carrinh-b.png" /></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container py-5 pagina-conteudo">
+        <h1>Meu Carrinho</h1>
+        <section aria-labelledby="seus-itens">
+            <h2 id="seus-itens">Seus itens:</h2>
+            <!-- Produtos adicionados pelo JavaScript -->
+            <div id="lista-carrinho"></div>
+            <br />
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Total do pedido:</h2>
+                <h2 id="total-carrinho">R$ 0,00</h2>
+            </div>
+            <div class="acoes-carrinho">
+                <!-- CONTINUAR COMPRANDO -->
+                <a class="btn-continuar" href="/index.html">
                     Continuar comprando
                 </a>
-<!-- IR PARA PAGAMENTO -->
-<button class="btn-pagamento" id="ir-pagamento" onclick="window.location.href='paga.html'" type="button">
+                <!-- IR PARA PAGAMENTO -->
+                <button class="btn-pagamento" id="ir-pagamento" onclick="window.location.href='paga.html'"
+                    type="button">
                     Ir para pagamento
                 </button>
-</div>
-</section>
-</main>
-<footer class="site-footer"><div class="footer-container"><div class="footer-col footer-brand"><a class="footer-logo" href="/index.html"><img alt="Mont Ararat Hamburgueria" height="72" src="/assets/img/logo.jpeg" width="72"/><span>Mont Ararat<small>Hamburgueria artesanal</small></span></a><p>Embarque nessa montanha de sabores!</p></div><div class="footer-col"><h2>Explore</h2><nav aria-label="Navegação do rodapé"><ul><li><a href="/index.html">Início</a></li><li><a href="/pages/sobrenos.html">Sobre nós</a></li><li><a href="/pages/avaliacoes.html">Avaliações</a></li><li><a href="/pages/carrinho.html">Meu carrinho</a></li></ul></nav></div><div class="footer-col"><h2>Contato</h2><address>R. Vercínio Pereira de Souza, 1199<br/>São Mateus, São Paulo – SP<br/>CEP 03945-000</address><a href="/pages/contato.html">Fale conosco</a></div></div><div class="footer-bottom"><p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p></div></footer>
-<script src="/JavaScript/carrinho.js"></script>
-<script defer="True" src="/JavaScript/navegacao.js"></script></body>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand"><a class="footer-logo" href="../index.html"><img
+                        alt="Mont Ararat Hamburgueria" height="72" src="../assets/img/logo.jpeg" width="72" /><span>Mont
+                        Ararat<small>Hamburgueria artesanal</small></span></a>
+                <p>Embarque nessa montanha de sabores!</p>
+            </div>
+
+            <div class="footer-col">
+
+            </div>
+
+            <div class="footer-col">
+                <h2>Contato</h2>
+                <address>R. Vercínio Pereira de Souza, 1199<br />São Mateus, São Paulo – SP<br />CEP 03945-000</address>
+                <a href="contato.html">Fale conosco</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="/JavaScript/carrinho.js"></script>
+    <script defer="True" src="/JavaScript/navegacao.js"></script>
+</body>
+
 </html>

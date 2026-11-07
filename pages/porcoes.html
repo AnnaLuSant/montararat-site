@@ -1,99 +1,127 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Porções</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
-    <link rel="stylesheet" href="../../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
+    <link href="../paginas.css" rel="stylesheet" />
+    <link href="../produto.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="site-body pagina-porcoes">
     <header class="site-header">
-        <div class="logo">
-            <a href="/index.html"><img alt="Logo Mont Ararat" height="100" src="../../assets/img/logo.jpeg"
-                    width="100"></a>
-        </div>
+        <div class="logo"><a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+                    src="../assets/img/logo.jpeg" width="100" /></a></div>
         <nav aria-label="Navegação principal" class="main-nav">
-            <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/pages/sobrenos.html">Sobre</a></li>
-                <li><a href="/pages/carrinho.html">Carrinho</a></li>
-                <li><a href="/pages/contato.html">Contato</a></li>
-                <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="avaliacoes.html">Avaliações</a></li>
+                <li class="nav-item"><a class="nav-link" href="locais.html">Locais</a></li>
+                <li class="nav-item"><a class="nav-link" href="maisvendidos.html">Mais vendidos</a></li>
+                <li class="nav-item"><a class="nav-link carrinho-link" href="carrinho.html"><img
+                            alt="Carrinho de compras" src="../assets/img/carrinho.png" /></a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="pagina-conteudo conteudo-porcoes">
         <article>
             <h1>Porções</h1>
-
             <div>
                 <h2 id="porcoes-batata">Porções disponíveis</h2>
-                <figure>
-                    <img alt="Coxinhas" height="220" src="/assets/img/coxinha.jpeg" width="200">
-                    <figcaption>Coxinha 3 | 6 unidades<br>Coxinha Pulled 3 | 6 unidades</figcaption>
+                <figure class="porcao-card">
+                    <img alt="Coxinhas" height="220" src="../assets/img/coxinha.jpeg" width="200" />
+                    <figcaption>Coxinha 3 | 6 unidades<br />Coxinha Pulled 3 | 6 unidades</figcaption>
                 </figure>
-                <figure>
-                    <img alt="Nuggets" height="220" src="../../assets/img/nuggets.jpeg" width="200">
+                <figure class="porcao-card">
+                    <img alt="Nuggets" height="220" src="../assets/img/nuggets.jpeg" width="200" />
                     <figcaption>Nuggtes 6 | 10 unidades</figcaption>
                 </figure>
-                <figure>
-                    <img alt="Batatas" height="220" src="../../assets/img/batatas.jpeg" width="200">
-                    <figcaption>Batata Média<br>Batata Grande<br>Batata Pulled</figcaption>
+                <figure class="porcao-card">
+                    <img alt="Batatas" height="220" src="../assets/img/batatas.jpeg" width="200" />
+                    <figcaption>Batata Média<br />Batata Grande<br />Batata Pulled</figcaption>
                 </figure>
             </div>
-
             <section aria-labelledby="adicionais-batata">
                 <h2 id="adicionais-batata">Adicionais Batata</h2>
                 <p>Bacon | Catupiry | Cheddar | Cream Cheese</p>
             </section>
-
             <section aria-labelledby="extras-lanches">
                 <h2 id="extras-lanches">Extras nos lanches</h2>
-                <p>Burguer (Bovino | Frango | Linguiça)<br>
-                    Burguer (Queijo coalho) <br>
-                    Burguer (Salmão) <br>
-                    Bacon | Catupiry | Cheddar | Cream Cheese | Mussarela <br>
-                    Cebola Caramelizada ou empanada <br>
-                    Pimenta Jalapeño | Picles <br>
+                <p>Burguer (Bovino | Frango | Linguiça)<br />
+                    Burguer (Queijo coalho) <br />
+                    Burguer (Salmão) <br />
+                    Bacon | Catupiry | Cheddar | Cream Cheese | Mussarela <br />
+                    Cebola Caramelizada ou empanada <br />
+                    Pimenta Jalapeño | Picles <br />
                     Pulled Porck</p>
             </section>
-
             <section aria-labelledby="bebidas">
                 <h2 id="bebidas">Bebidas</h2>
-                <p><strong>Cervejas:</strong><br>
-                    Heineken <br>
+                <p><strong>Cervejas:</strong><br />
+                    Heineken <br />
                     Eisenbahn</p>
-                <p><strong>Refrigerantes:</strong><br>
-                    Coca-Cola <br>
-                    Coca- Cola Zero <br>
-                    Fanta Laranja <br>
-                    Fanta Uva <br>
-                    Sprite <br>
+                <p><strong>Refrigerantes:</strong><br />
+                    Coca-Cola <br />
+                    Coca- Cola Zero <br />
+                    Fanta Laranja <br />
+                    Fanta Uva <br />
+                    Sprite <br />
                     Sprite Zero</p>
-                <p><strong>Sucos:</strong><br>
-                    Del Valle Uva <br>
-                    Del Valle Maracujá <br>
+                <p><strong>Sucos:</strong><br />
+                    Del Valle Uva <br />
+                    Del Valle Maracujá <br />
                     Del Valle Pêssego </p>
-                <p><strong>Pink Lemonade:</strong><br>
-                    Frutas Vermelhas com Limão <br>
+                <p><strong>Pink Lemonade:</strong><br />
+                    Frutas Vermelhas com Limão <br />
                     Maça Verde com Limão</p>
             </section>
         </article>
-
         <nav aria-label="Navegação entre produtos">
             <ul class="paginacao-produtos">
-                <li><a href="vegetariano.html">Anterior</a></li>
-                <li><a href="../../index.html">Voltar ao início</a></li>
+                <li><a class="btn-secundario" href="vegetariano.html">Anterior</a></li>
+                <li><a class="btn-secundario" href="../index.html">Voltar ao início</a></li>
             </ul>
         </nav>
     </main>
     <footer class="site-footer">
-        <p>&copy; 2026 Mont Ararat Hamburgueria.</p>
+        <div class="footer-container">
+            <div class="footer-col footer-brand"><a class="footer-logo" href="../index.html"><img
+                        alt="Mont Ararat Hamburgueria" height="72" src="../assets/img/logo.jpeg" width="72" /><span>Mont
+                        Ararat<small>Hamburgueria artesanal</small></span></a>
+                <p>Embarque nessa montanha de sabores!</p>
+            </div>
+            <div class="footer-col">
+                <h2>Explore</h2>
+                <nav aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="sobrenos.html">Sobre nós</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="carrinho.html">Meu carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <h2>Contato</h2>
+                <address>R. Vercínio Pereira de Souza, 1199<br />São Mateus, São Paulo – SP<br />CEP 03945-000</address>
+                <a href="contato.html">Fale conosco</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Mont Ararat Hamburgueria. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 
