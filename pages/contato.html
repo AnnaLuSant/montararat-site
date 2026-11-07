@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Mont Ararat Hamburgueria</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="/style.css">
-    
+
     <!-- Fontes do site -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="site-header">
-        <div class="logo">
-            <a href="/index.html">
-                <img alt="Logo da Mont Ararat Hamburgueria" src="/assets/img/logo.jpeg">
-            </a>
-        </div>
+        <div class="logo"><a href="../index.html"><img alt="Logo da Mont Ararat Hamburgueria" height="100"
+                    src="../assets/img/logo.jpeg" width="100" /></a></div>
         <nav aria-label="Navegação principal" class="main-nav">
-            <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/pages/sobrenos.html">Sobre</a></li>
-                <li><a href="/pages/carrinho.html">Carrinho</a></li>
-                <li><a href="/pages/contato.html">Contato</a></li>
-                <li><a href="/pages/avaliacoes.html">Avaliações</a></li>
-                <li><a href="/pages/locais.html">Locais</a></li>
-                <li><a href="/pages/ajuda.html">Ajuda</a></li>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link active" href="avaliacoes.html">Avaliações</a></li>
+                <li class="nav-item"><a class="nav-link" href="locais.html">Locais</a></li>
+                <li class="nav-item"><a class="nav-link" href="maisvendidos.html">Mais vendidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="paga.html">Pagamento</a></li>
+                <li class="nav-item"><a class="nav-link carrinho-link" href="carrinho.html"><img
+                            alt="Carrinho de compras" src="../assets/img/carrinho.png" /></a></li>
             </ul>
         </nav>
     </header>
@@ -50,48 +51,32 @@
             <form action="/enviar-contato" method="POST">
                 <fieldset>
                     <legend class="visually-hidden">Formulário de Contato</legend>
-                    
+
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" 
-                            id="nome" name="nome" 
-                            class="form-control" 
-                            placeholder="Digite seu nome aqui"
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome aqui"
                             required>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" 
-                            id="email"
-                            name="email" 
-                            class="form-control"
-                            placeholder="usuario@gmail.com" 
+                        <input type="email" id="email" name="email" class="form-control" placeholder="usuario@gmail.com"
                             required>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone:</label>
-                        <input type="tel" 
-                               id="telefone" 
-                               name="telefone" 
-                               class="form-control" 
-                               placeholder="(11) 98765-4321" 
-                               pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$" 
-                               title="Digite o telefone no formato: (11) 98765-4321 ou (11) 8765-4321" 
-                               required>
+                        <input type="tel" id="telefone" name="telefone" class="form-control"
+                            placeholder="(11) 98765-4321" pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$"
+                            title="Digite o telefone no formato: (11) 98765-4321 ou (11) 8765-4321" required>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem:</label>
-                        <textarea 
-                            id="mensagem" 
-                            name="mensagem" 
-                            class="form-control" 
-                            placeholder="Digite sua mensagem aqui"
-                            required></textarea>
+                        <textarea id="mensagem" name="mensagem" class="form-control"
+                            placeholder="Digite sua mensagem aqui" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn-principal">Enviar Mensagem</button>
                 </fieldset>
             </form>
@@ -102,11 +87,9 @@
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-12 col-md-6 text-center">
-                    <iframe
-                        title="Localização da Mont Ararat Hamburgueria no Google Maps"
+                    <iframe title="Localização da Mont Ararat Hamburgueria no Google Maps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.77349690115!2d-46.776296113281255!3d-23.602218300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67daad72cc63%3A0x81187072112d7064!2sMont%20Ararat%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1789006761838!5m2!1spt-BR!2sbr"
-                        width="700" height="350" style="border:0;"
-                        allowfullscreen loading="lazy"
+                        width="700" height="350" style="border:0;" allowfullscreen loading="lazy"
                         referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <!-- Adicionada a classe 'ps-md-5' para empurrar o texto mais para a direita do mapa -->
