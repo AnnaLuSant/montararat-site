@@ -145,11 +145,16 @@ As maiores dificuldades da equipe foram o CSS e o JavaScript, que envolvem semâ
 
 A validação no W3C foi outro desafio: o validador aponta erros extremamente minuciosos, como um valor numérico escrito sem unidade de medida no CSS, o que dificulta a aprovação das páginas. Foi preciso revisar o código com atenção, linha por linha, para corrigir esses detalhes sem alterar a aparência do site.
 
+---
+
 ### Conclusão final
 
 Ao fim da entrega 2, o projeto ficou com uma interface muito mais harmônica e estruturada, com elementos funcionais em JavaScript, estilização em CSS e um HTML mais limpo e bem organizado. A evolução em comparação com a entrega 1 é notável, tanto no visual quanto na organização do código e na quantidade de páginas e funcionalidades do site.
-
+---
 
 ### Site final
 https://astonishing-bavarois-e462b0.netlify.app/
+---
+### Vídeo de Auditoria
+https://youtu.be/upuVOdtIYus?si=QhfWRloj8HA6EWiA
 ---
